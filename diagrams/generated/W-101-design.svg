@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3310" height="2970" viewBox="0 0 3310 2970" role="img" aria-label="W-101 R3.5 | 6S main/compute/motion distribution and fuses — Design view">
+<style>text{font-family:Arial,Helvetica,sans-serif} .edge{fill:none;stroke:#77869c;stroke-width:2.3;opacity:.55} .node{stroke-width:1.6} .title{font-weight:700;fill:#1c2d41;font-size:30px} .sub{fill:#5d6f83;font-size:16px} .name{fill:#172b3f;font-size:15px;font-weight:600} .meta{fill:#52657c;font-size:12px} .count{font-size:13px;fill:#34495e}</style>
+<rect width="3310" height="2970" fill="#ffffff"/>
+<text class="title" x="44" y="60">W-101 R3.5 | 6S main/compute/motion distribution and fuses — Design view</text>
+<text class="sub" x="44" y="91">Generated from 2026-11-02 checked-in Wiring Studio snapshot. Logical connectivity only; not a fabrication drawing.</text>
+<polyline class="edge" points="2520,1890 2880,2070"><title>B-ESC-POWER-4WAY (FIT HOLD) → ESC-FL-PWR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2520,1890 2880,1820"><title>B-ESC-POWER-4WAY (FIT HOLD) → ESC-FR-PWR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2520,1890 2880,2570"><title>B-ESC-POWER-4WAY (FIT HOLD) → ESC-RL-PWR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2520,1890 2880,2320"><title>B-ESC-POWER-4WAY (FIT HOLD) → ESC-RR-PWR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="210,1350 360,1350 510,1350"><title>BAT-6S → F0-BLUESEA-MRBF-125A-REVIEW: 1 cable(s)</title></polyline>
+<polyline class="edge" points="210,1350 1190,1350"><title>BAT-6S → PM08-CAN-TINNED-8AWG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2450,240 2600,240 2750,240"><title>COMPUTE-FUSED-DIST → ORIN-UBEC: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2150,240 2310,240 2450,240"><title>COMPUTE-SWITCH → COMPUTE-FUSED-DIST: 1 cable(s)</title></polyline>
+<polyline class="edge" points="510,1350 660,1350 810,1350"><title>F0-BLUESEA-MRBF-125A-REVIEW → MAIN-AS300-150A-POSITIVE: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1840,240 1990,240 2150,240"><title>F1-ATO10A-COMPUTE → COMPUTE-SWITCH: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2620,2810 2990,2810"><title>F2-ATO10A-GRIPPER → GRIPPER-12V-REG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1530,1350 2450,240"><title>HV-JUNCTION → COMPUTE-FUSED-DIST: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1530,1350 1840,240"><title>HV-JUNCTION → F1-ATO10A-COMPUTE: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1530,1350 1880,1780"><title>HV-JUNCTION → MOTION-AS300-150A-POSITIVE: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1530,1350 2240,1780"><title>HV-JUNCTION → PDB-MOTION: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1530,1350 1360,1350 1190,1350"><title>HV-JUNCTION → PM08-CAN-TINNED-8AWG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="810,1350 1000,1350 1190,1350"><title>MAIN-AS300-150A-POSITIVE → PM08-CAN-TINNED-8AWG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1880,1780 2060,1780 2240,1780"><title>MOTION-AS300-150A-POSITIVE → PDB-MOTION: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2750,240 2900,240 3070,240"><title>ORIN-UBEC → ORIN-INPUT-XT30: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2240,1780 2370,1800 2520,1890"><title>PDB-MOTION → B-ESC-POWER-4WAY (FIT HOLD): 1 cable(s)</title></polyline>
+<polyline class="edge" points="2240,1780 2620,2810"><title>PDB-MOTION → F2-ATO10A-GRIPPER: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2240,1780 2990,2810"><title>PDB-MOTION → GRIPPER-12V-REG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1280,840 1720,1090"><title>PM08-PWR1-6P (physical) → PIXHAWK-CAN1: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1280,840 1500,840 1720,840"><title>PM08-PWR1-6P (physical) → PIXHAWK-POWER2: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1280,560 1500,560 1720,560"><title>PM08-PWR2-6P (independent BEC) → PIXHAWK-POWER1: 1 cable(s)</title></polyline>
+<g><title>BAT-6S | RTX-R32-BATT-2</title>
+<rect class="node" x="127" y="1316" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="135" y="1339">BAT-6S</text>
+<text class="meta" x="135" y="1376">RTX-R32-BATT-2</text>
+</g>
+<g><title>MAIN-AS300-150A-POSITIVE | AS300-PAIR-DC-POS</title>
+<rect class="node" x="727" y="1316" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="735" y="1339">MAIN-</text>
+<text class="name" x="735" y="1356">AS300-150A-POSITIVE</text>
+<text class="meta" x="735" y="1376">AS300-PAIR-DC-POS</text>
+</g>
+<g><title>HV-JUNCTION | RTX-R32-HVBUS</title>
+<rect class="node" x="1447" y="1316" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1455" y="1339">HV-JUNCTION</text>
+<text class="meta" x="1455" y="1376">RTX-R32-HVBUS</text>
+</g>
+<g><title>COMPUTE-SWITCH | RTX-R33-COMPUTE-POSITIVE-SW-TBD</title>
+<rect class="node" x="2067" y="206" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2075" y="229">COMPUTE-SWITCH</text>
+<text class="meta" x="2075" y="266">RTX-R33-COMPUTE-POSITIV</text>
+</g>
+<g><title>COMPUTE-FUSED-DIST | RTX-R32-CBUS</title>
+<rect class="node" x="2367" y="206" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2375" y="229">COMPUTE-FUSED-DIST</text>
+<text class="meta" x="2375" y="266">RTX-R32-CBUS</text>
+</g>
+<g><title>ORIN-UBEC | 15026</title>
+<rect class="node" x="2667" y="206" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="2675" y="229">ORIN-UBEC</text>
+<text class="meta" x="2675" y="266">15026</text>
+</g>
+<g><title>ORIN-INPUT-XT30 | RTX-R32-JET-XT30-2</title>
+<rect class="node" x="2987" y="206" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2995" y="229">ORIN-INPUT-XT30</text>
+<text class="meta" x="2995" y="266">RTX-R32-JET-XT30-2</text>
+</g>
+<g><title>PIXHAWK-POWER1 | 502439-0600</title>
+<rect class="node" x="1637" y="526" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="1645" y="549">PIXHAWK-POWER1</text>
+<text class="meta" x="1645" y="586">502439-0600</text>
+</g>
+<g><title>MOTION-AS300-150A-POSITIVE | AS300-PAIR-DC-POS</title>
+<rect class="node" x="1797" y="1746" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1805" y="1769">MOTION-</text>
+<text class="name" x="1805" y="1786">AS300-150A-POSITIVE</text>
+<text class="meta" x="1805" y="1806">AS300-PAIR-DC-POS</text>
+</g>
+<g><title>PM08-CAN-TINNED-8AWG | 15029</title>
+<rect class="node" x="1107" y="1316" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1115" y="1339">PM08-CAN-TINNED-8AWG</text>
+<text class="meta" x="1115" y="1376">15029</text>
+</g>
+<g><title>PDB-MOTION | 18139</title>
+<rect class="node" x="2157" y="1746" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="2165" y="1769">PDB-MOTION</text>
+<text class="meta" x="2165" y="1806">18139</text>
+</g>
+<g><title>PIXHAWK-POWER2 | 502439-0600</title>
+<rect class="node" x="1637" y="806" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="1645" y="829">PIXHAWK-POWER2</text>
+<text class="meta" x="1645" y="866">502439-0600</text>
+</g>
+<g><title>PIXHAWK-CAN1 | GHR-04V-S</title>
+<rect class="node" x="1637" y="1056" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="1645" y="1079">PIXHAWK-CAN1</text>
+<text class="meta" x="1645" y="1116">GHR-04V-S</text>
+</g>
+<g><title>GRIPPER-12V-REG | 5677</title>
+<rect class="node" x="2907" y="2776" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="2915" y="2799">GRIPPER-12V-REG</text>
+<text class="meta" x="2915" y="2836">5677</text>
+</g>
+<g><title>ESC-FR-PWR | RTX-R32-ESC-PWR2</title>
+<rect class="node" x="2797" y="1786" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2805" y="1809">ESC-FR-PWR</text>
+<text class="meta" x="2805" y="1846">RTX-R32-ESC-PWR2</text>
+</g>
+<g><title>ESC-FL-PWR | RTX-R32-ESC-PWR2</title>
+<rect class="node" x="2797" y="2036" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2805" y="2059">ESC-FL-PWR</text>
+<text class="meta" x="2805" y="2096">RTX-R32-ESC-PWR2</text>
+</g>
+<g><title>ESC-RR-PWR | RTX-R32-ESC-PWR2</title>
+<rect class="node" x="2797" y="2286" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2805" y="2309">ESC-RR-PWR</text>
+<text class="meta" x="2805" y="2346">RTX-R32-ESC-PWR2</text>
+</g>
+<g><title>ESC-RL-PWR | RTX-R32-ESC-PWR2</title>
+<rect class="node" x="2797" y="2536" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2805" y="2559">ESC-RL-PWR</text>
+<text class="meta" x="2805" y="2596">RTX-R32-ESC-PWR2</text>
+</g>
+<g><title>PM08-PWR1-6P (physical) | 502439-0600</title>
+<rect class="node" x="1197" y="806" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1205" y="829">PM08-PWR1-6P</text>
+<text class="name" x="1205" y="846">(physical)</text>
+<text class="meta" x="1205" y="866">502439-0600</text>
+</g>
+<g><title>PM08-PWR2-6P (independent BEC) | 502439-0600</title>
+<rect class="node" x="1197" y="526" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1205" y="549">PM08-PWR2-6P</text>
+<text class="name" x="1205" y="566">(independent BEC)</text>
+<text class="meta" x="1205" y="586">502439-0600</text>
+</g>
+<g><title>F0-BLUESEA-MRBF-125A-REVIEW | 5184+5191</title>
+<rect class="node" x="427" y="1316" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="435" y="1339">F0-BLUESEA-</text>
+<text class="name" x="435" y="1356">MRBF-125A-REVIEW</text>
+<text class="meta" x="435" y="1376">5184+5191</text>
+</g>
+<g><title>F1-ATO10A-COMPUTE | FHAC0001LXN+ATO10A</title>
+<rect class="node" x="1757" y="206" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1765" y="229">F1-ATO10A-COMPUTE</text>
+<text class="meta" x="1765" y="266">FHAC0001LXN+ATO10A</text>
+</g>
+<g><title>F2-ATO10A-GRIPPER | FHAC0001LXN+ATO10A</title>
+<rect class="node" x="2537" y="2776" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="2545" y="2799">F2-ATO10A-GRIPPER</text>
+<text class="meta" x="2545" y="2836">FHAC0001LXN+ATO10A</text>
+</g>
+<g><title>B-ESC-POWER-4WAY (FIT HOLD) | 202K111-25-0</title>
+<rect class="node" x="2437" y="1856" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2445" y="1879">B-ESC-POWER-4WAY (FIT</text>
+<text class="name" x="2445" y="1896">HOLD)</text>
+<text class="meta" x="2445" y="1916">202K111-25-0</text>
+</g>
+<text class="sub" x="44" y="2933">Source: Wiring Studio | 24 components | 25 drawn connections | full pin-level nets in accompanying CSV</text>
+</svg>

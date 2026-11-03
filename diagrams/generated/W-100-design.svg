@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3999" height="3584" viewBox="0 0 3999 3584" role="img" aria-label="W-100 R3.5 | Integrated vehicle wiring + qualified-part selections — Design view">
+<style>text{font-family:Arial,Helvetica,sans-serif} .edge{fill:none;stroke:#77869c;stroke-width:2.3;opacity:.55} .node{stroke-width:1.6} .title{font-weight:700;fill:#1c2d41;font-size:30px} .sub{fill:#5d6f83;font-size:16px} .name{fill:#172b3f;font-size:15px;font-weight:600} .meta{fill:#52657c;font-size:12px} .count{font-size:13px;fill:#34495e}</style>
+<rect width="3999" height="3584" fill="#ffffff"/>
+<text class="title" x="44" y="60">W-100 R3.5 | Integrated vehicle wiring + qualified-part selections — Design view</text>
+<text class="sub" x="44" y="91">Generated from 2026-11-02 checked-in Wiring Studio snapshot. Logical connectivity only; not a fabrication drawing.</text>
+<polyline class="edge" points="2476,2071 2681,2071 2681,2306 2858,2306"><title>B-PROPULSION-POWER-LOOM (FIT HOLD) → ESC-FL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2476,2071 2699,2071 2699,2088 2858,2088"><title>B-PROPULSION-POWER-LOOM (FIT HOLD) → ESC-FR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2476,2071 2644,2071 2644,2743 2858,2743"><title>B-PROPULSION-POWER-LOOM (FIT HOLD) → ESC-RL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2476,2071 2662,2071 2662,2525 2858,2525"><title>B-PROPULSION-POWER-LOOM (FIT HOLD) → ESC-RR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1970 2763,1970 2763,2306 2858,2306"><title>B-PWM-4WAY-SLEEVE (FIT HOLD) → ESC-FL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1970 2749,1970 2749,2088 2858,2088"><title>B-PWM-4WAY-SLEEVE (FIT HOLD) → ESC-FR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1970 2790,1970 2790,2743 2858,2743"><title>B-PWM-4WAY-SLEEVE (FIT HOLD) → ESC-RL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1970 2776,1970 2776,2525 2858,2525"><title>B-PWM-4WAY-SLEEVE (FIT HOLD) → ESC-RR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="210,1643 465,1643"><title>BAT-01 6S → F0-BLUESEA-MRBF-125A-REVIEW: 1 cable(s)</title></polyline>
+<polyline class="edge" points="210,1643 309,1688 840,1688 1002,1643"><title>BAT-01 6S → PM08-CAN-TINNED-8AWG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2012,635 2258,635"><title>COMPUTE-DIST → JETSON-UBEC: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2858,2306 3186,2306"><title>ESC-FL → MOTOR-FL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2858,2088 3186,2088"><title>ESC-FR → MOTOR-FR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2858,2743 3186,2743"><title>ESC-RL → MOTOR-RL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2858,2525 3186,2525"><title>ESC-RR → MOTOR-RR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="465,1643 720,1643"><title>F0-BLUESEA-MRBF-125A-REVIEW → MAIN-AS300-150A-POSITIVE: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1520,635 1766,635"><title>F1-ATO10A-COMPUTE → SW-COMPUTE: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1985,3096 2267,3096"><title>F2-ATO10A-GRIPPER → GRIP-12V-BUCK: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2267,3096 2380,3096 2380,3197 2494,3197"><title>GRIP-12V-BUCK → JUNC-12V-GND-3: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2267,3096 2380,3096 2380,3012 2494,3012"><title>GRIP-12V-BUCK → JUNC-12V-PLUS-3: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1302,1643 1337,1603 1337,940 1783,940 1783,757 2012,635"><title>HV-SPLIT → COMPUTE-DIST: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1302,1643 1420,1643 1420,635 1520,635"><title>HV-SPLIT → F1-ATO10A-COMPUTE: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1302,1643 1303,1603 1303,1963 1566,2071"><title>HV-SPLIT → MOTION-AS300-150A-POSITIVE: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1302,1643 1345,1674 1345,2041 1593,2041 1593,1963 1848,2071"><title>HV-SPLIT → PDB-300A: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1302,1643 1204,1815 1002,1643"><title>HV-SPLIT → PM08-CAN-TINNED-8AWG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3058,736 3133,855 3133,736 3759,576"><title>J-ORIN-GPIO-6P → NFC-PN7160-MATE-8P: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3058,475 3286,509 3286,748 3331,740"><title>J-ORIN-I2C-4P → JUNC-NFC-GND-3: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3058,475 3441,341"><title>J-ORIN-I2C-4P → NFC-2X2K2-PULLUP-ADAPTER: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3058,475 3286,500"><title>J-ORIN-I2C-4P → NFC-POLOLU-5432-3V3: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2850,890 3000,890"><title>J-ORIN-USB2-5P → USB2-A-FEMALE-ROBO: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2885,1248 3213,1248"><title>J-PIX-CAN2-4 → H-FLOW: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2503,1634 2603,1634 2603,1970 2694,1970"><title>J-PIX-MAIN10 (harness) → B-PWM-4WAY-SLEEVE (FIT HOLD): 1 cable(s)</title></polyline>
+<polyline class="edge" points="2503,1634 2585,1634 2585,1802 2694,1802"><title>J-PIX-MAIN10 (harness) → JUNC-PWM-GND-5: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2885,1450 3213,1450"><title>J-PIX-RCIN5 → R81-SBUS: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2785,3424 3077,3424"><title>J-ROBO-S3-3PIN → VCLAMP-IMC603: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2512,635 2491,757 2491,425 2922,240"><title>JETSON-ORIN → D455: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2512,635 2491,757 2491,594 2922,442"><title>JETSON-ORIN → IMX219-CAMERA: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2512,635 3213,1210"><title>JETSON-ORIN → SIK-915-RADIO: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2258,635 2512,635"><title>JETSON-UBEC → JETSON-ORIN: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2494,3197 2658,3197 2658,3096 2785,3096"><title>JUNC-12V-GND-3 → ROBOCLAW-2x7: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2494,3197 2785,3197 2785,3424 3077,3424"><title>JUNC-12V-GND-3 → VCLAMP-IMC603: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2494,3012 2658,3012 2658,3096 2785,3096"><title>JUNC-12V-PLUS-3 → ROBOCLAW-2x7: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2494,3012 2785,3012 2785,3424 3077,3424"><title>JUNC-12V-PLUS-3 → VCLAMP-IMC603: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3331,740 3550,748 3550,610 3759,576"><title>JUNC-NFC-GND-3 → NFC-PN7160-MATE-8P: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3331,740 3413,748 3413,509 3286,500"><title>JUNC-NFC-GND-3 → NFC-POLOLU-5432-3V3: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1802 2767,1802 2767,2306 2858,2306"><title>JUNC-PWM-GND-5 → ESC-FL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1802 2785,1802 2785,2088 2858,2088"><title>JUNC-PWM-GND-5 → ESC-FR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1802 2731,1802 2731,2743 2858,2743"><title>JUNC-PWM-GND-5 → ESC-RL: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2694,1802 2749,1802 2749,2525 2858,2525"><title>JUNC-PWM-GND-5 → ESC-RR: 1 cable(s)</title></polyline>
+<polyline class="edge" points="720,1643 872,1815 1002,1643"><title>MAIN-AS300-150A-POSITIVE → PM08-CAN-TINNED-8AWG: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1566,2071 1577,1963 1848,2071"><title>MOTION-AS300-150A-POSITIVE → PDB-300A: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3441,341 3759,576"><title>NFC-2X2K2-PULLUP-ADAPTER → NFC-PN7160-MATE-8P: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3522,492 3441,341"><title>NFC-3V3-LOCAL-SPLIT → NFC-2X2K2-PULLUP-ADAPTER: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3522,492 3759,576"><title>NFC-3V3-LOCAL-SPLIT → NFC-PN7160-MATE-8P: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3286,500 3522,492"><title>NFC-POLOLU-5432-3V3 → NFC-3V3-LOCAL-SPLIT: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1848,2071 2176,2071 2476,2071"><title>PDB-300A → B-PROPULSION-POWER-LOOM (FIT HOLD): 1 cable(s)</title></polyline>
+<polyline class="edge" points="1848,2071 1939,2071 1939,3096 1985,3096"><title>PDB-300A → F2-ATO10A-GRIPPER: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1848,2071 1891,1963 1891,2824 2267,3096"><title>PDB-300A → GRIP-12V-BUCK: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1002,1643 1520,1643 1520,1189 2767,1189 2767,1030 2840,1030"><title>PM08-CAN-TINNED-8AWG → J-PIX-CAN1-4: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1002,1643 1460,1603 1460,1081 2230,1081 2512,1046"><title>PM08-CAN-TINNED-8AWG → PIXHAWK-6X: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1766,1046 1957,1102 2512,1046"><title>PM08-SECOND-BEC-CLIK6 → PIXHAWK-6X: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2785,3096 3268,3096 3268,3197 3386,3197"><title>ROBOCLAW-2x7 → GRIP-FAR-TRAVEL-ESTOP: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2785,3096 2827,2824 2827,2739 3386,2995"><title>ROBOCLAW-2x7 → GRIP-HOME-SW: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2785,3096 3077,3096"><title>ROBOCLAW-2x7 → GRIPPER-4845: 1 cable(s)</title></polyline>
+<polyline class="edge" points="1766,635 2012,635"><title>SW-COMPUTE → COMPUTE-DIST: 1 cable(s)</title></polyline>
+<polyline class="edge" points="2776,744 3481,848 3481,2668 2553,2668 2785,3096"><title>USB-ISOLATOR-IMC614 → ROBOCLAW-2x7: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3000,890 2776,744"><title>USB2-A-FEMALE-ROBO → USB-ISOLATOR-IMC614: 1 cable(s)</title></polyline>
+<polyline class="edge" points="3077,3424 3386,3424"><title>VCLAMP-IMC603 → BRAKE-2OHM-50W: 1 cable(s)</title></polyline>
+<g><title>BAT-01 6S | 6S LIPO BATTERY</title>
+<rect class="node" x="127" y="1609" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="135" y="1632">BAT-01 6S</text>
+<text class="meta" x="135" y="1669">6S LIPO BATTERY</text>
+</g>
+<g><title>MAIN-AS300-150A-POSITIVE | AS300-PAIR-DC-POS</title>
+<rect class="node" x="637" y="1609" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="645" y="1632">MAIN-</text>
+<text class="name" x="645" y="1649">AS300-150A-POSITIVE</text>
+<text class="meta" x="645" y="1669">AS300-PAIR-DC-POS</text>
+</g>
+<g><title>HV-SPLIT | 6S POWER SPLIT</title>
+<rect class="node" x="1219" y="1609" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1227" y="1632">HV-SPLIT</text>
+<text class="meta" x="1227" y="1669">6S POWER SPLIT</text>
+</g>
+<g><title>SW-COMPUTE | RTX-R33-COMPUTE-POSITIVE-SW-TBD</title>
+<rect class="node" x="1683" y="601" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="1691" y="624">SW-COMPUTE</text>
+<text class="meta" x="1691" y="661">RTX-R33-COMPUTE-POSITIV</text>
+</g>
+<g><title>COMPUTE-DIST | COMPUTE FUSES</title>
+<rect class="node" x="1929" y="601" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="1937" y="624">COMPUTE-DIST</text>
+<text class="meta" x="1937" y="661">COMPUTE FUSES</text>
+</g>
+<g><title>MOTION-AS300-150A-POSITIVE | AS300-PAIR-DC-POS</title>
+<rect class="node" x="1483" y="2037" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1491" y="2060">MOTION-</text>
+<text class="name" x="1491" y="2077">AS300-150A-POSITIVE</text>
+<text class="meta" x="1491" y="2097">AS300-PAIR-DC-POS</text>
+</g>
+<g><title>PM08-CAN-TINNED-8AWG | 15029</title>
+<rect class="node" x="919" y="1609" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="927" y="1632">PM08-CAN-TINNED-8AWG</text>
+<text class="meta" x="927" y="1669">15029</text>
+</g>
+<g><title>PDB-300A | 18139</title>
+<rect class="node" x="1765" y="2037" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1773" y="2060">PDB-300A</text>
+<text class="meta" x="1773" y="2097">18139</text>
+</g>
+<g><title>JETSON-ORIN | 11072</title>
+<rect class="node" x="2429" y="601" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2437" y="624">JETSON-ORIN</text>
+<text class="meta" x="2437" y="661">11072</text>
+</g>
+<g><title>JETSON-UBEC | 15026</title>
+<rect class="node" x="2175" y="601" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="2183" y="624">JETSON-UBEC</text>
+<text class="meta" x="2183" y="661">15026</text>
+</g>
+<g><title>PIXHAWK-6X | PIXHAWK-6X</title>
+<rect class="node" x="2429" y="1012" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2437" y="1035">PIXHAWK-6X</text>
+<text class="meta" x="2437" y="1072">PIXHAWK-6X</text>
+</g>
+<g><title>GRIP-12V-BUCK | 5677</title>
+<rect class="node" x="2184" y="3062" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="2192" y="3085">GRIP-12V-BUCK</text>
+<text class="meta" x="2192" y="3122">5677</text>
+</g>
+<g><title>ROBOCLAW-2x7 | RoboClaw-2x7A</title>
+<rect class="node" x="2702" y="3062" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="2710" y="3085">ROBOCLAW-2x7</text>
+<text class="meta" x="2710" y="3122">RoboClaw-2x7A</text>
+</g>
+<g><title>GRIPPER-4845 | 4845</title>
+<rect class="node" x="2994" y="3062" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="3002" y="3085">GRIPPER-4845</text>
+<text class="meta" x="3002" y="3122">4845</text>
+</g>
+<g><title>GRIP-HOME-SW | LIMIT SWITCH NC</title>
+<rect class="node" x="3303" y="2961" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="3311" y="2984">GRIP-HOME-SW</text>
+<text class="meta" x="3311" y="3021">LIMIT SWITCH NC</text>
+</g>
+<g><title>GRIP-FAR-TRAVEL-ESTOP | RTX-R34-SPDT-NO-SWITCH</title>
+<rect class="node" x="3303" y="3163" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="3311" y="3186">GRIP-FAR-TRAVEL-ESTOP</text>
+<text class="meta" x="3311" y="3223">RTX-R34-SPDT-NO-SWITCH</text>
+</g>
+<g><title>H-FLOW | H-FLOW-DRONECAN</title>
+<rect class="node" x="3130" y="1214" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3138" y="1237">H-FLOW</text>
+<text class="meta" x="3138" y="1274">H-FLOW-DRONECAN</text>
+</g>
+<g><title>R81-SBUS | R81-D8-SBUS</title>
+<rect class="node" x="3130" y="1416" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3138" y="1439">R81-SBUS</text>
+<text class="meta" x="3138" y="1476">R81-D8-SBUS</text>
+</g>
+<g><title>NFC-PN7160-MATE-8P | 51021-0800</title>
+<rect class="node" x="3676" y="542" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3684" y="565">NFC-PN7160-MATE-8P</text>
+<text class="meta" x="3684" y="602">51021-0800</text>
+</g>
+<g><title>NFC-POLOLU-5432-3V3 | 5432</title>
+<rect class="node" x="3203" y="466" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3211" y="489">NFC-POLOLU-5432-3V3</text>
+<text class="meta" x="3211" y="526">5432</text>
+</g>
+<g><title>D455 | REAL SENSE D455</title>
+<rect class="node" x="2839" y="206" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2847" y="229">D455</text>
+<text class="meta" x="2847" y="266">REAL SENSE D455</text>
+</g>
+<g><title>IMX219-CAMERA | IMX219 CSI</title>
+<rect class="node" x="2839" y="408" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2847" y="431">IMX219-CAMERA</text>
+<text class="meta" x="2847" y="468">IMX219 CSI</text>
+</g>
+<g><title>NVME-MKEY | NVME SSD M-KEY</title>
+<rect class="node" x="2839" y="609" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2847" y="632">NVME-MKEY</text>
+<text class="meta" x="2847" y="669">NVME SSD M-KEY</text>
+</g>
+<g><title>BRAINCHIP-AKD1000-BM2260-X1-TEST | BD-PCIE-M210BM</title>
+<rect class="node" x="3075" y="765" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="3083" y="788">BRAINCHIP-AKD1000-</text>
+<text class="name" x="3083" y="805">BM2260-X1-TEST</text>
+<text class="meta" x="3083" y="825">BD-PCIE-M210BM</text>
+</g>
+<g><title>ESC-FR | 30901001</title>
+<rect class="node" x="2775" y="2054" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2783" y="2077">ESC-FR</text>
+<text class="meta" x="2783" y="2114">30901001</text>
+</g>
+<g><title>ESC-FL | 30901001</title>
+<rect class="node" x="2775" y="2272" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2783" y="2295">ESC-FL</text>
+<text class="meta" x="2783" y="2332">30901001</text>
+</g>
+<g><title>ESC-RR | 30901001</title>
+<rect class="node" x="2775" y="2491" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2783" y="2514">ESC-RR</text>
+<text class="meta" x="2783" y="2551">30901001</text>
+</g>
+<g><title>ESC-RL | 30901001</title>
+<rect class="node" x="2775" y="2709" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2783" y="2732">ESC-RL</text>
+<text class="meta" x="2783" y="2769">30901001</text>
+</g>
+<g><title>MOTOR-FR | MN4014-KV330</title>
+<rect class="node" x="3103" y="2054" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="3111" y="2077">MOTOR-FR</text>
+<text class="meta" x="3111" y="2114">MN4014-KV330</text>
+</g>
+<g><title>MOTOR-FL | MN4014-KV330</title>
+<rect class="node" x="3103" y="2272" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="3111" y="2295">MOTOR-FL</text>
+<text class="meta" x="3111" y="2332">MN4014-KV330</text>
+</g>
+<g><title>MOTOR-RR | MN4014-KV330</title>
+<rect class="node" x="3103" y="2491" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="3111" y="2514">MOTOR-RR</text>
+<text class="meta" x="3111" y="2551">MN4014-KV330</text>
+</g>
+<g><title>MOTOR-RL | MN4014-KV330</title>
+<rect class="node" x="3103" y="2709" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="3111" y="2732">MOTOR-RL</text>
+<text class="meta" x="3111" y="2769">MN4014-KV330</text>
+</g>
+<g><title>J-PIX-MAIN10 (harness) | GHR-10V-S</title>
+<rect class="node" x="2420" y="1600" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2428" y="1623">J-PIX-MAIN10</text>
+<text class="name" x="2428" y="1640">(harness)</text>
+<text class="meta" x="2428" y="1660">GHR-10V-S</text>
+</g>
+<g><title>J-ROBO-S3-3PIN | RTX-R33-ROBO-S3-3P</title>
+<rect class="node" x="2702" y="3390" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="2710" y="3413">J-ROBO-S3-3PIN</text>
+<text class="meta" x="2710" y="3450">RTX-R33-ROBO-S3-3P</text>
+</g>
+<g><title>VCLAMP-IMC603 | IMC603</title>
+<rect class="node" x="2994" y="3390" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="3002" y="3413">VCLAMP-IMC603</text>
+<text class="meta" x="3002" y="3450">IMC603</text>
+</g>
+<g><title>BRAKE-2OHM-50W | KAL50FB2R00</title>
+<rect class="node" x="3303" y="3390" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="3311" y="3413">BRAKE-2OHM-50W</text>
+<text class="meta" x="3311" y="3450">KAL50FB2R00</text>
+</g>
+<g><title>J-ORIN-I2C-4P | GHR-04V-S</title>
+<rect class="node" x="2975" y="441" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2983" y="464">J-ORIN-I2C-4P</text>
+<text class="meta" x="2983" y="501">GHR-04V-S</text>
+</g>
+<g><title>J-ORIN-GPIO-6P | GHR-06V-S</title>
+<rect class="node" x="2975" y="702" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2983" y="725">J-ORIN-GPIO-6P</text>
+<text class="meta" x="2983" y="762">GHR-06V-S</text>
+</g>
+<g><title>PM08-SECOND-BEC-CLIK6 | 502439-0600</title>
+<rect class="node" x="1683" y="1012" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1691" y="1035">PM08-SECOND-BEC-CLIK6</text>
+<text class="meta" x="1691" y="1072">502439-0600</text>
+</g>
+<g><title>USB-ISOLATOR-IMC614 | IMC614</title>
+<rect class="node" x="2693" y="710" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2701" y="733">USB-ISOLATOR-IMC614</text>
+<text class="meta" x="2701" y="770">IMC614</text>
+</g>
+<g><title>F0-BLUESEA-MRBF-125A-REVIEW | 5184+5191</title>
+<rect class="node" x="382" y="1609" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="390" y="1632">F0-BLUESEA-</text>
+<text class="name" x="390" y="1649">MRBF-125A-REVIEW</text>
+<text class="meta" x="390" y="1669">5184+5191</text>
+</g>
+<g><title>F1-ATO10A-COMPUTE | FHAC0001LXN+ATO10A</title>
+<rect class="node" x="1437" y="601" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1445" y="624">F1-ATO10A-COMPUTE</text>
+<text class="meta" x="1445" y="661">FHAC0001LXN+ATO10A</text>
+</g>
+<g><title>J-PIX-RCIN5 | GHR-05V-S</title>
+<rect class="node" x="2802" y="1416" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2810" y="1439">J-PIX-RCIN5</text>
+<text class="meta" x="2810" y="1476">GHR-05V-S</text>
+</g>
+<g><title>J-PIX-CAN2-4 | GHR-04V-S</title>
+<rect class="node" x="2802" y="1214" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2810" y="1237">J-PIX-CAN2-4</text>
+<text class="meta" x="2810" y="1274">GHR-04V-S</text>
+</g>
+<g><title>J-PIX-CAN1-4 | GHR-04V-S</title>
+<rect class="node" x="2757" y="996" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2765" y="1019">J-PIX-CAN1-4</text>
+<text class="meta" x="2765" y="1056">GHR-04V-S</text>
+</g>
+<g><title>JUNC-PWM-GND-5 | RTX-R34-JUNC-PWM-5</title>
+<rect class="node" x="2611" y="1768" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2619" y="1791">JUNC-PWM-GND-5</text>
+<text class="meta" x="2619" y="1828">RTX-R34-JUNC-PWM-5</text>
+</g>
+<g><title>JUNC-12V-PLUS-3 | RTX-R34-JUNC-12V-P-3</title>
+<rect class="node" x="2411" y="2978" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2419" y="3001">JUNC-12V-PLUS-3</text>
+<text class="meta" x="2419" y="3038">RTX-R34-JUNC-12V-P-3</text>
+</g>
+<g><title>JUNC-12V-GND-3 | RTX-R34-JUNC-12V-G-3</title>
+<rect class="node" x="2411" y="3163" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="2419" y="3186">JUNC-12V-GND-3</text>
+<text class="meta" x="2419" y="3223">RTX-R34-JUNC-12V-G-3</text>
+</g>
+<g><title>JUNC-NFC-GND-3 | RTX-R34-JUNC-NFC-G-3</title>
+<rect class="node" x="3248" y="706" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3256" y="729">JUNC-NFC-GND-3</text>
+<text class="meta" x="3256" y="766">RTX-R34-JUNC-NFC-G-3</text>
+</g>
+<g><title>F2-ATO10A-GRIPPER | FHAC0001LXN+ATO10A</title>
+<rect class="node" x="1902" y="3062" width="166" height="68" rx="7" fill="#fff0eb" stroke="#c46e54"/>
+<text class="name" x="1910" y="3085">F2-ATO10A-GRIPPER</text>
+<text class="meta" x="1910" y="3122">FHAC0001LXN+ATO10A</text>
+</g>
+<g><title>B-PWM-4WAY-SLEEVE (FIT HOLD) | 202K111-25-0</title>
+<rect class="node" x="2611" y="1936" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2619" y="1959">B-PWM-4WAY-SLEEVE</text>
+<text class="name" x="2619" y="1976">(FIT HOLD)</text>
+<text class="meta" x="2619" y="1996">202K111-25-0</text>
+</g>
+<g><title>B-PROPULSION-POWER-LOOM (FIT HOLD) | 202K111-25-0</title>
+<rect class="node" x="2393" y="2037" width="166" height="68" rx="7" fill="#fff4df" stroke="#b58b3f"/>
+<text class="name" x="2401" y="2060">B-PROPULSION-POWER-</text>
+<text class="name" x="2401" y="2077">LOOM (FIT HOLD)</text>
+<text class="meta" x="2401" y="2097">202K111-25-0</text>
+</g>
+<g><title>NFC-2X2K2-PULLUP-ADAPTER | NFC-2X2K2-I2C-ADAPTER-PCB</title>
+<rect class="node" x="3358" y="307" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3366" y="330">NFC-2X2K2-PULLUP-</text>
+<text class="name" x="3366" y="347">ADAPTER</text>
+<text class="meta" x="3366" y="367">NFC-2X2K2-I2C-ADAPTER-P</text>
+</g>
+<g><title>NFC-3V3-LOCAL-SPLIT | RTX-NFC-3V3-FANOUT-3</title>
+<rect class="node" x="3439" y="458" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3447" y="481">NFC-3V3-LOCAL-SPLIT</text>
+<text class="meta" x="3447" y="518">RTX-NFC-3V3-FANOUT-3</text>
+</g>
+<g><title>M2-EKEY-TO-MKEY-DELOCK64343 | 64343</title>
+<rect class="node" x="2848" y="765" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2856" y="788">M2-EKEY-TO-MKEY-</text>
+<text class="name" x="2856" y="805">DELOCK64343</text>
+<text class="meta" x="2856" y="825">64343</text>
+</g>
+<g><title>J-ORIN-USB2-5P | GHR-05V-S</title>
+<rect class="node" x="2767" y="856" width="166" height="68" rx="7" fill="#ebf2ff" stroke="#547bb4"/>
+<text class="name" x="2775" y="879">J-ORIN-USB2-5P</text>
+<text class="meta" x="2775" y="916">GHR-05V-S</text>
+</g>
+<g><title>USB2-A-FEMALE-ROBO | RTX-USB2-A-FEMALE-5NET</title>
+<rect class="node" x="2917" y="856" width="166" height="68" rx="7" fill="#f5eefd" stroke="#9070af"/>
+<text class="name" x="2925" y="879">USB2-A-FEMALE-ROBO</text>
+<text class="meta" x="2925" y="916">RTX-USB2-A-FEMALE-5NET</text>
+</g>
+<g><title>SIK-915-RADIO | RTX-SIK-V3-100MW-USB-MICROB</title>
+<rect class="node" x="3130" y="1176" width="166" height="68" rx="7" fill="#e9f6f3" stroke="#5d9c91"/>
+<text class="name" x="3138" y="1199">SIK-915-RADIO</text>
+<text class="meta" x="3138" y="1236">RTX-SIK-V3-100MW-USB-MI</text>
+</g>
+<text class="sub" x="44" y="3547">Source: Wiring Studio | 58 components | 68 drawn connections | full pin-level nets in accompanying CSV</text>
+</svg>
