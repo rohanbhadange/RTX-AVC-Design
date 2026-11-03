@@ -2,6 +2,13 @@
 
 Engineering design, electrical integration, and revision history for the RTX Autonomous Vehicle Challenge UAV.
 
+## Wiring diagrams and versioned electrical documentation
+
+- [W-100 and W-101 complete diagrams](diagrams/README.md) — native Wiring Studio PNGs, searchable SVG views, and pin-to-pin CSVs.
+- [System wiring architecture](diagrams/architecture.md) — power, Jetson/BrainChip/SiK interfaces, and pilot safety/control paths.
+- [Wiring publication policy](docs/wiring-maintenance.md) — changes to Wiring Studio must be accompanied by refreshed GitHub snapshots, screenshots, and change notes.
+- [Current W-100 snapshot](snapshots/wiring-studio/W-100_current.json) and [W-101 snapshot](snapshots/wiring-studio/W-101_current.json). New snapshot commits automatically regenerate SVG/CSV through GitHub Actions.
+
 ## Source of truth
 - **Native CAD:** working SolidWorks assembly, with exported/reviewed releases committed when available. Do not infer CAD geometry from wiring diagrams.
 - **Electrical:** Wiring Studio project `RTX AVC | R3.5 INTEGRATION SELECTED — engineering test HOLD`, W-100 (integrated wiring) and separate W-101 power-tree project. Wiring Studio is a live working model, *not* automatically synchronized to GitHub.
