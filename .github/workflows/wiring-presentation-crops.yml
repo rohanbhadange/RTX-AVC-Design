@@ -1,0 +1,38 @@
+name: Build presentation wiring crops
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'diagrams/wiring-studio/W-100-design.png'
+      - 'diagrams/wiring-studio/W-100-wiring.png'
+      - 'diagrams/wiring-studio/W-101-design.png'
+      - 'diagrams/wiring-studio/W-101-wiring.png'
+      - 'scripts/crop_wiring_for_presentation.py'
+      - '.github/workflows/wiring-presentation-crops.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  crop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: python3 -m pip install --disable-pip-version-check pillow
+      - name: Generate image crops
+        run: python3 scripts/crop_wiring_for_presentation.py
+      - name: Commit updated crops
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add diagrams/presentation/
+          if git diff --cached --quiet; then
+            echo "No changes to presentation crops."
+          else
+            git commit -m "docs(wiring): update presentation crops from Studio exports"
+            git push origin HEAD:main
+          fi
