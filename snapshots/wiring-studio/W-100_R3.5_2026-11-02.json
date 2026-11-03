@@ -7,9 +7,9 @@
   "decision": "ADR-0001",
   "notes": [
     "Structured working model snapshot, not a native Wiring Studio import/export and not a validated wire harness.",
-    "Exact connector and cable lengths are incomplete; zero lengths should not be inferred.",
-    "SiK requirement reconciled to manufacturer Micro-USB 100mW variant; radio on Jetson USB-A2, gripper control moved to Orin USB2 GH5.",
-    "Pin 6 on USB2-A-FEMALE-ROBO is a virtual composite factory cable representation; not a physical USB-A contact."
+    "Connector contact and cable lengths are incomplete; zero lengths should not be inferred.",
+    "SiK 100mW V3 Micro-USB by manufacturer; one USB cable on Jetson USB3-A2. RoboClaw IMC614 reassigned via separate Jetson USB2 GH5 port, 5 physical host wires to USB-A female.",
+    "USB2-A-FEMALE-ROBO connector 6th cavity explicitly VIRTUAL composite factory cable link, NOT a physical USB-A pin. GH5 pin order is 5V,D-,D+,GND,shield."
   ],
   "sheet": {
     "components": [
