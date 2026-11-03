@@ -21,3 +21,24 @@ Engineering design, electrical integration, and revision history for the RTX Aut
 - BrainChip AKD1000 B+M 2260 via Delock 64343 in Jetson E-key; SSD remains in the M-key socket (documented in the live W-100 component records).
 
 > Design statuses are deliberately distinct: *proposed*, *schematic-integrated*, *mechanically packaged*, *bench-validated*, and *flight-validated*. Never promote a status without evidence.
+
+## Saved CAD archive — Drone Playground
+
+Saved source checkpoint of the existing SolidWorks drone project: **C124 / R3_3_PACKAGING**. This repository records the integrated engineering baseline and its referenced CAD dependencies. No optimized candidate geometry is installed in this checkpoint.
+
+The main assembly is [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM). CAD is stored with Git LFS. Install Git LFS before cloning, then run `git lfs pull` to download the actual CAD files.
+
+Project directory relationships and native reference bytes are preserved. **Cross-machine path resolution and a cold portable checkout have not been verified.** This is a saved-source version-control archive. It is not a flight, fabrication or manufacturing release. Material densities and represented masses include provisional assumptions.
+
+The saved baseline passed scoped save/rebuild checks with error/warning status 0/0 and 82 baseline root signatures preserved. The archive was copied from an explicitly reviewed dependency allowlist, with source/copy/source SHA256 agreement. [The file manifest](manifest.json) records archived asset paths, sizes and SHA256 hashes. These checks establish the recorded disk snapshot; they do not qualify mechanical loads, electrical safety, complete harness routing or aircraft performance.
+
+See [checkpoint notes](CHECKPOINT.md) for implemented scope and remaining integration work, and [source attribution](ATTRIBUTION.md) for third-party CAD ownership.
+
+### Historical native views
+
+These C122 exports show the earlier C121 internal-power integration geometry inherited by C124. They do not show installed R3.3 optimization candidates.
+
+![C122 historical isometric view of C121 internal-power integration](images/C122_Internal_Power_isometric.png)
+
+![C122 historical top view of C121 internal-power integration](images/C122_Internal_Power_top.png)
+

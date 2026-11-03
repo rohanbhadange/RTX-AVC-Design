@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mstns:materials xmlns:mstns="http://www.solidworks.com/sldmaterials" xmlns:ns2="http://www.solidworks.com/sldcolorswatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.solidworks.com/sldmaterials&#10;E:\Temp\sldmaterials.xsd" version="2008.03">
+  <curves id="curve0">
+    <point x="1.0" y="1.0" />
+    <point x="2.0" y="1.0" />
+    <point x="3.0" y="1.0" />
+  </curves>
+  <PropertyTable>
+    <matProperty name="EX" user_description="Elastic Modulus [in X]" />
+    <matProperty name="EY" user_description="Elastic Modulus in Y" />
+    <matProperty name="EZ" user_description="Elastic Modulus in Z" />
+    <matProperty name="NUXY" user_description="Poisson's Ratio [in XY]" />
+    <matProperty name="NUYZ" user_description="Poisson's Ratio in YZ" />
+    <matProperty name="NUXZ" user_description="Poisson's Ratio in XZ" />
+    <matProperty name="GXZ" user_description="Shear Modulus in XZ" />
+    <matProperty name="GYZ" user_description="Shear Modulus in YZ" />
+    <matProperty name="GXY" user_description="Shear Modulus [in XY]" />
+    <matProperty name="ALPX" user_description="Thermal Expansion Coefficient [in X]" />
+    <matProperty name="ALPY" user_description="Thermal Expansion Coefficient in Y" />
+    <matProperty name="ALPZ" user_description="Thermal Expansion Coefficient in Z" />
+    <matProperty name="DENS" user_description="Mass Density" />
+    <matProperty name="KX" user_description="Thermal Conductivity [in X]" />
+    <matProperty name="KY" user_description="Thermal Conductivity in Y" />
+    <matProperty name="KZ" user_description="Thermal Conductivity in Z" />
+    <matProperty name="C" user_description="Specific Heat" />
+    <matProperty name="SIGXT" user_description="Tensile Strength [in X]" />
+    <matProperty name="SIGYT" user_description="Tensile Strength in Y" />
+    <matProperty name="SIGXC" user_description="Compressive Strength [in X]" />
+    <matProperty name="SIGYC" user_description="Compressive Strength in Y" />
+    <matProperty name="SIGYLD" user_description="Yield Strength" />
+    <matProperty name="SIGXY" user_description="Shear Strength [in XY]" />
+    <matProperty name="MC11" user_description="Material Matrix (1,1)" />
+    <matProperty name="MC12" user_description="Material Matrix (1,2)" />
+    <matProperty name="MC13" user_description="Material Matrix (1,3)" />
+    <matProperty name="MC14" user_description="Material Matrix (1,4)" />
+    <matProperty name="MC15" user_description="Material Matrix (1,5)" />
+    <matProperty name="MC16" user_description="Material Matrix (1,6)" />
+    <matProperty name="MC22" user_description="Material Matrix (2,2)" />
+    <matProperty name="MC23" user_description="Material Matrix (2,3)" />
+    <matProperty name="MC24" user_description="Material Matrix (2,4)" />
+    <matProperty name="MC25" user_description="Material Matrix (2,5)" />
+    <matProperty name="MC26" user_description="Material Matrix (2,6)" />
+    <matProperty name="MC33" user_description="Material Matrix (3,3)" />
+    <matProperty name="MC34" user_description="Material Matrix (3,4)" />
+    <matProperty name="MC35" user_description="Material Matrix (3,5)" />
+    <matProperty name="MC36" user_description="Material Matrix (3,6)" />
+    <matProperty name="MC44" user_description="Material Matrix (4,4)" />
+    <matProperty name="MC45" user_description="Material Matrix (4,5)" />
+    <matProperty name="MC46" user_description="Material Matrix (4,6)" />
+    <matProperty name="MC55" user_description="Material Matrix (5,5)" />
+    <matProperty name="MC56" user_description="Material Matrix (3,6)" />
+    <matProperty name="MC66" user_description="Material Matrix (6,6)" />
+    <matProperty name="ETAN" user_description="Tangent Modulus" />
+    <matProperty name="COHESN" user_description="Cohesion strength" />
+    <matProperty name="FRCANG" user_description="Friction angle" />
+    <matProperty name="MOONEY_A" user_description="First Material Constant" />
+    <matProperty name="MOONEY_B" user_description="Second Material Constant" />
+    <matProperty name="MOONEY_C" user_description="Third Material Constant" />
+    <matProperty name="MOONEY_D" user_description="Fourth Material Constant" />
+    <matProperty name="MOONEY_E" user_description="Fifth Material Constant" />
+    <matProperty name="MOONEY_F" user_description="Sixth Material Constant" />
+    <matProperty name="ALPH1" user_description="First Power Coefficient" />
+    <matProperty name="ALPH2" user_description="Second Power Coefficient" />
+    <matProperty name="ALPH3" user_description="Third Power Coefficient" />
+    <matProperty name="ALPH4" user_description="Fourth Power Coefficient" />
+    <matProperty name="MU1" user_description="First Constant" />
+    <matProperty name="MU2" user_description="Second Constant" />
+    <matProperty name="MU3" user_description="Third Constant" />
+    <matProperty name="MU4" user_description="Fourth Constant" />
+    <matProperty name="G1" user_description="Shear Relaxation Modulus(1)" />
+    <matProperty name="G2" user_description="Shear Relaxation Modulus(2)" />
+    <matProperty name="G3" user_description="Shear Relaxation Modulus(3)" />
+    <matProperty name="G4" user_description="Shear Relaxation Modulus(4)" />
+    <matProperty name="G5" user_description="Shear Relaxation Modulus(5)" />
+    <matProperty name="G6" user_description="Shear Relaxation Modulus(6)" />
+    <matProperty name="G7" user_description="Shear Relaxation Modulus(7)" />
+    <matProperty name="G8" user_description="Shear Relaxation Modulus(8)" />
+    <matProperty name="TAUG1" user_description="Time Values (Shear Relaxation Modulus 1)" />
+    <matProperty name="TAUG2" user_description="Time Values (Shear Relaxation Modulus 2)" />
+    <matProperty name="TAUG3" user_description="Time Values (Shear Relaxation Modulus 3)" />
+    <matProperty name="TAUG4" user_description="Time Values (Shear Relaxation Modulus 4)" />
+    <matProperty name="TAUG5" user_description="Time Values (Shear Relaxation Modulus 5)" />
+    <matProperty name="TAUG6" user_description="Time Values (Shear Relaxation Modulus 6)" />
+    <matProperty name="TAUG7" user_description="Time Values (Shear Relaxation Modulus 7)" />
+    <matProperty name="TAUG8" user_description="Time Values (Shear Relaxation Modulus 8)" />
+    <matProperty name="K1" user_description="Bulk Relaxation Modulus(1)" />
+    <matProperty name="K2" user_description="Bulk Relaxation Modulus(2)" />
+    <matProperty name="K3" user_description="Bulk Relaxation Modulus(3)" />
+    <matProperty name="K4" user_description="Bulk Relaxation Modulus(4)" />
+    <matProperty name="K5" user_description="Bulk Relaxation Modulus(5)" />
+    <matProperty name="K6" user_description="Bulk Relaxation Modulus(6)" />
+    <matProperty name="K7" user_description="Bulk Relaxation Modulus(7)" />
+    <matProperty name="K8" user_description="Bulk Relaxation Modulus(8)" />
+    <matProperty name="TAUK1" user_description="Time Values (Bulk Relaxation Modulus 1)" />
+    <matProperty name="TAUK2" user_description="Time Values (Bulk Relaxation Modulus 2)" />
+    <matProperty name="TAUK3" user_description="Time Values (Bulk Relaxation Modulus 3)" />
+    <matProperty name="TAUK4" user_description="Time Values (Bulk Relaxation Modulus 4)" />
+    <matProperty name="TAUK5" user_description="Time Values (Bulk Relaxation Modulus 5)" />
+    <matProperty name="TAUK6" user_description="Time Values (Bulk Relaxation Modulus 6)" />
+    <matProperty name="TAUK7" user_description="Time Values (Bulk Relaxation Modulus 7)" />
+    <matProperty name="TAUK8" user_description="Time Values (Bulk Relaxation Modulus 8)" />
+    <matProperty name="REFTEMP" user_description="Glassy Transition Temperature" />
+    <matProperty name="VC1" user_description="First Constant For Williams-Landel-Ferry Equation" />
+    <matProperty name="VC2" user_description="Second Constant For Williams-Landel-Ferry Equation" />
+    <matProperty name="CREEPX" user_description="Exponential Creep Constant" />
+    <matProperty name="CREEPC" user_description="Classic Creep Constant" />
+    <matProperty name="CREEPCONST1" user_description="Creep Constant 1" />
+    <matProperty name="CREEPCONST2" user_description="Creep Constant 2" />
+    <matProperty name="CREEPCONST3" user_description="Creep Constant 3" />
+    <matProperty name="CREEPCONST4" user_description="Creep Constant 4" />
+    <matProperty name="CREEPCONST5" user_description="Creep Constant 5" />
+    <matProperty name="CREEPCONST6" user_description="Creep Constant 6" />
+    <matProperty name="CREEPCONST7" user_description="Creep Constant 7" />
+    <matProperty name="CREEPTC" user_description="Creep Temperature Dependency Constant" />
+    <matProperty name="RK" user_description="Hardening Factor" />
+    <matProperty name="SIGT_S1" user_description="Initial Yield Stress (Tensile Loading)" />
+    <matProperty name="SIGT_F1" user_description="Final Yield Stress (Tensile Loading)" />
+    <matProperty name="SIGT_S2" user_description="Initial Yield Stress (Tensile Unloading)" />
+    <matProperty name="SIGT_F2" user_description="Final Yield Stress (Tensile Unloading)" />
+    <matProperty name="SIGC_S1" user_description="Initial Yield Stress (Compressive Loading)" />
+    <matProperty name="SIGC_F1" user_description="Final Yield Stress (Compressive Loading)" />
+    <matProperty name="SIGC_S2" user_description="Initial Yield Stress (Compressive Unloading)" />
+    <matProperty name="SIGC_F2" user_description="Final Yield Stress (Compressive Unloading)" />
+    <matProperty name="EUL" user_description="Ultimate Plastic Strain Measure (Tension)" />
+    <matProperty name="BETAT_1" user_description="Exponential Flow Rate Measure (Tensile Loading)" />
+    <matProperty name="BETAT_2" user_description="Exponential Flow Rate Measure (Tensile Unloading)" />
+    <matProperty name="BETAC_1" user_description="Exponential Flow Rate Measure (Compressive Loading)" />
+    <matProperty name="BETAC_2" user_description="Exponential Flow Rate Measure (Compressive Unoading)" />
+    <matProperty name="MDAMP" user_description="Material Damping Ratio">
+    </matProperty>
+  </PropertyTable>
+  <classification name="RTX Drone ? Density Only"><material name="PAHT-CF - 1060 kg-m3 - density only" description="Preliminary CAD mass only; no validated mechanical or thermal properties. CF tube density matches nominal supplier linear mass; printed material depends on process." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="505050">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1060" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="CF Plate - 1600 kg-m3 - provisional density" description="Preliminary CAD mass only; no validated mechanical or thermal properties. CF tube density matches nominal supplier linear mass; printed material depends on process." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="303030">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1600" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="CF Tube - 1449 kg-m3 - supplier mass equivalent" description="Preliminary CAD mass only; no validated mechanical or thermal properties. CF tube density matches nominal supplier linear mass; printed material depends on process." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="383838">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1449" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="Aluminum - 2700 kg-m3 - density only" description="Preliminary CAD mass only; no validated mechanical or thermal properties. CF tube density matches nominal supplier linear mass; printed material depends on process." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="a0a0a0">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="2700" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="Steel - 7850 kg-m3 - density only" description="Preliminary CAD mass only; no validated mechanical or thermal properties. CF tube density matches nominal supplier linear mass; printed material depends on process." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="808080">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="7850" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="Grip foam - 500 kg-m3 - provisional density" description="Grip foam density estimate only. Supplier, compression and friction unselected; no certified properties." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="505050">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="500" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="Strap assembly - catalog mass override" description="Compound strap assembly mass uses supplier override; no certified homogeneous density or strength." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="505050">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1000" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="Electronic assembly - catalog mass override" description="Compound electronic assembly; supplier mass override, no certified homogeneous material or strength." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="505050">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1000" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="PA66HS - 1140 kg-m3 - estimated density" description="Routed PA66HS tie estimated density only; not a catalog mass or structural allowable." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="505050">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1140" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    <material name="Polyamide - 1140 kg-m3 - provisional density" description="Unfilled polyamide density estimate only; actual vendor polymer grade,density,strength and dielectric properties unqualified." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="505050">
+        <ns2:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI32 (Steel)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1140" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    </classification></mstns:materials>
