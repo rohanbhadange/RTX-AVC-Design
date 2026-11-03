@@ -1,0 +1,32 @@
+[
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM",
+    "bytes": 132052400,
+    "sha256": "1d950e844755882bce5d9d08a0fff6494443046bc6fe08e8f7bca96b3186e159"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_Internal_Power_Carrier.SLDASM",
+    "bytes": 3982756,
+    "sha256": "39fe939cdc48f37fb2ec5b57f732b9b39547ca457da2f67b42ba7be4a90cd520"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-PWR-013_Integrated_Carrier_Candidate02.SLDPRT",
+    "bytes": 818979,
+    "sha256": "00ee232fb9340842dee00d69f121c18c786dcdc29518d7819c1f824b072d6ec3"
+  },
+  {
+    "repoRelative": "images/C168_Integrated_Power_isometric.png",
+    "bytes": 48537,
+    "sha256": "4f0b59a95d592dfeceb27e364928091e0882b95c96dc8368c677f9f8f19d4868"
+  },
+  {
+    "repoRelative": "images/C168_Integrated_Power_top.png",
+    "bytes": 45731,
+    "sha256": "736a2d18410124a5cdb6f07a5b2bee617af1d573ac02c43ba020780ca858ec7b"
+  },
+  {
+    "repoRelative": "images/C164_Integrated_Power_Carrier_Candidate.png",
+    "bytes": 298540,
+    "sha256": "f6650ee552291cd5869699f6218debd29895fe567fc589f12f10473a1c5052b1"
+  }
+]

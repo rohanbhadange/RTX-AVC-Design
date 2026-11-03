@@ -9,6 +9,9 @@ Engineering design, electrical integration, and revision history for the RTX Aut
 - [Wiring publication policy](docs/wiring-maintenance.md) — changes to Wiring Studio must be accompanied by refreshed GitHub snapshots, screenshots, and change notes.
 - [Current W-100 snapshot](snapshots/wiring-studio/W-100_current.json) and [W-101 snapshot](snapshots/wiring-studio/W-101_current.json). New snapshot commits automatically regenerate SVG/CSV through GitHub Actions.
 
+
+Current saved CAD checkpoint: **[C168 — integrated internal power carrier](CURRENT_CAD.md)**, configuration `R3_3_PACKAGING`. The previous C124 archive remains available in [its original commit](https://github.com/rohanbhadange/RTX-AVC-Design/tree/33064c5ab7eba07455f86873217466ac426707c5).
+
 ## Source of truth
 - **Native CAD:** working SolidWorks assembly, with exported/reviewed releases committed when available. Do not infer CAD geometry from wiring diagrams.
 - **Electrical:** Wiring Studio project `RTX AVC | R3.5 INTEGRATION SELECTED — engineering test HOLD`, W-100 (integrated wiring) and separate W-101 power-tree project. Wiring Studio is a live working model, *not* automatically synchronized to GitHub.
@@ -29,15 +32,15 @@ Engineering design, electrical integration, and revision history for the RTX Aut
 
 > Design statuses are deliberately distinct: *proposed*, *schematic-integrated*, *mechanically packaged*, *bench-validated*, and *flight-validated*. Never promote a status without evidence.
 
-## Saved CAD archive — Drone Playground
+## Historical C124 CAD archive — Drone Playground
 
 Saved source checkpoint of the existing SolidWorks drone project: **C124 / R3_3_PACKAGING**. This repository records the integrated engineering baseline and its referenced CAD dependencies. No optimized candidate geometry is installed in this checkpoint.
 
-The main assembly is [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM). CAD is stored with Git LFS. Install Git LFS before cloning, then run `git lfs pull` to download the actual CAD files.
+The historical C124 assembly is [preserved in its original commit](https://github.com/rohanbhadange/RTX-AVC-Design/blob/33064c5ab7eba07455f86873217466ac426707c5/cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM). CAD is stored with Git LFS. Install Git LFS before cloning, then run `git lfs pull` to download the actual CAD files.
 
 Project directory relationships and native reference bytes are preserved. **Cross-machine path resolution and a cold portable checkout have not been verified.** This is a saved-source version-control archive. It is not a flight, fabrication or manufacturing release. Material densities and represented masses include provisional assumptions.
 
-The saved baseline passed scoped save/rebuild checks with error/warning status 0/0 and 82 baseline root signatures preserved. The archive was copied from an explicitly reviewed dependency allowlist, with source/copy/source SHA256 agreement. [The file manifest](manifest.json) records archived asset paths, sizes and SHA256 hashes. These checks establish the recorded disk snapshot; they do not qualify mechanical loads, electrical safety, complete harness routing or aircraft performance.
+The saved baseline passed scoped save/rebuild checks with error/warning status 0/0 and 82 baseline root signatures preserved. The archive was copied from an explicitly reviewed dependency allowlist, with source/copy/source SHA256 agreement. [The C124 file manifest](https://github.com/rohanbhadange/RTX-AVC-Design/blob/33064c5ab7eba07455f86873217466ac426707c5/manifest.json) records archived asset paths, sizes and SHA256 hashes. These checks establish the recorded disk snapshot; they do not qualify mechanical loads, electrical safety, complete harness routing or aircraft performance.
 
 See [checkpoint notes](CHECKPOINT.md) for implemented scope and remaining integration work, and [source attribution](ATTRIBUTION.md) for third-party CAD ownership.
 
