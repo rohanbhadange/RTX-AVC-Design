@@ -15,9 +15,9 @@ OUT = ROOT / "diagrams" / "presentation"
 # (output, source, reference_preview_size, preview_crop_box)
 # Regions observed in the 2026-11-03 live Studio renders.
 CROPS = [
-    ("01-power-distribution.png", "W-101-design.png", (2047, 1918), (0, 0, 1830, 1080)),
+    ("01-power-distribution.png", "W-101-design.png", (2047, 1918), (0, 160, 1360, 1160)),
     ("02-compute-brainchip.png", "W-100-wiring.png", (1821, 2048), (555, 115, 1785, 710)),
-    ("03-comms-sensors.png", "W-100-design.png", (1600, 1486), (725, 10, 1565, 580)),
+    ("03-comms-sensors.png", "W-100-wiring.png", (1821, 2048), (940, 0, 1815, 775)),
     ("04-propulsion.png", "W-100-wiring.png", (1821, 2048), (580, 845, 1510, 1625)),
     ("05-gripper-control.png", "W-100-wiring.png", (1821, 2048), (715, 1605, 1775, 2048)),
 ]
