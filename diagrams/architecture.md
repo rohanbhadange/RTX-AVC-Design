@@ -7,7 +7,7 @@ This page is a **functional block-diagram companion** to the pin-level/native sc
 
 ## 1. Main power distribution
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
   BAT["6S LiPo"] --> F0["F0 main MRBF fuse<br/>125 A provisional"]
   F0 --> MAIN["AS300 main removable disconnect"]
@@ -28,13 +28,13 @@ flowchart LR
   PDB --> F2["F2 10 A gripper fuse"]
   F2 --> GBUCK["Pololu 12 V gripper buck"]
   GBUCK --> ROBO["RoboClaw 2×7A and VClamp"]
-\`\`\`
+```
 
 The Pixhawk and compute subsystems are powered independently of the motion arming plug. Fuse values and terminations are provisional in the live model. W-101 is the power-tree detail, not an additional physical PDB.
 
 ## 2. Jetson interfaces and communications
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
   J["Holybro Jetson Orin carrier"]
   J -- "USB 3.2 A1" --> D["Intel RealSense D455"]
@@ -47,13 +47,13 @@ flowchart LR
   J -- "I²C + GPIO + 3.3 V/5 V rails" --> NFC["PN7160 NFC and local interface"]
   J -- "M.2 Key M PCIe x4" --> SSD["NVMe SSD"]
   J -- "M.2 Key E to Delock 64343 PCIe x1" --> AK["BrainChip AKD1000 B+M 2260"]
-\`\`\`
+```
 
 **SiK change:** The onboard SiK receives all power/data via one Jetson USB cable, not Pixhawk TELEM1. Holybro identifies **Micro-USB on the V3 100 mW** model; the 1 W model uses USB-C. The team requirement of USB-C is overridden by the actual selected 100 mW product specification unless a different purchased revision is confirmed. Keep antenna accessible, clear of the carbon structure, and adjustable for arena-range testing.
 
 ## 3. Flight-control and gripper safety interfaces
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
   PM["PM08 BEC power"] --> FC["Pixhawk 6X"]
   R81["R81 RC SBUS receiver"] -->|"Independent RC-IN"| FC
@@ -67,7 +67,7 @@ flowchart LR
   FAR["Far-travel switch"] --> RC
   RC -->|"S3 clamp control"| VC["BasicMicro VClamp"]
   VC --> BR["2 Ω / 50 W braking resistor"]
-\`\`\`
+```
 
 **Safety:** The R81-to-Pixhawk connection remains the pilot override/kill path independent of the Jetson/SiK communications link. This diagram represents the present RoboClaw controller in W-100, not a completed transition to the proposed Pico 2 / DRV8874 controller.
 
