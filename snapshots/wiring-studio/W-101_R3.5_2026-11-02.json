@@ -1,0 +1,2847 @@
+{
+  "snapshotDate": "2026-11-02",
+  "source": "Wiring Studio connected live API",
+  "projectId": "k97evfv1h1rcx74b5thsmt6s398h42sx",
+  "sheetId": "k57c1e7kgzesvvyxjb8f640zms8h5b3q",
+  "projectName": "RTX AVC | R3.5 W-101 POWER TREE — engineering test HOLD",
+  "notes": [
+    "R3.5 W-101 power distribution snapshot; may duplicate conceptual circuits from W-100 and is NOT an extra set of installed components.",
+    "Working model, not a native Wiring Studio import/export or fabrication release.",
+    "Cable lengths and many terminations remain unassigned; use DRC summary to track completeness."
+  ],
+  "sheet": {
+    "components": [
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh719c54j1n4v527rggktjctzd8h5kzb",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "BAT-6S",
+        "parentName": null,
+        "partNumber": "RTX-R32-BATT-2",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "6S LiPo pack positive at up to 25.2V full charge to F0 rated DC fuse as close to battery as physically feasible. Battery type, connector and installed wire gauge still unknown.",
+            "label": "BAT+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "6S pack negative, continuous common return to PM08; not disconnected by the independent compute/motion positive switches.",
+            "label": "BAT-",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh737z51n5m4fmbk5029a0mesx8h5mac",
+        "manufacturer": "Amass",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "MAIN-AS300-150A-POSITIVE",
+        "parentName": null,
+        "partNumber": "AS300-PAIR-DC-POS",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Selected AMASS AS300 main removable positive-only high-current connection, 150A continuous quoted for 6AWG by Holybro. No assumed anti-spark, verify proper procedure and no-load insertion; F0 provides short protection. 6AWG-to-factory PM08 8AWG qualified transition.",
+            "label": "6S IN +",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "AMASS AS300 downstream main + output to PM08 tinned 8AWG HVIN+. Verify mating retention and contact temperature at worst-case 4-motor current.",
+            "label": "6S OUT +",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 6,
+        "description": null,
+        "extraParts": [],
+        "id": "jh7f6xbbd581k9w99eyn3zrpy58h4y9x",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "HV-JUNCTION",
+        "parentName": null,
+        "partNumber": "RTX-R32-HVBUS",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "PM08 6S monitored power OUTPUT + into insulated split; compute F1 and motion positive-switch branches. A physical bus/splice rated for full shared DC current must be chosen.",
+            "label": "IN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "PM08 common 6S OUTPUT - return into bus; battery negative remains continuous.",
+            "label": "IN-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": null,
+            "description": "HV split compute branch positive to F1 fuse, independent of motion arm.",
+            "label": "COMP+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": null,
+            "description": "HV split compute ground return direct to UBEC branch, not switched.",
+            "label": "COMP-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 5,
+            "contactPartNumber": null,
+            "description": "HV split motion + power to high-current removable arm plug; supplies four ESCs plus gripper.",
+            "label": "MOTION+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 6,
+            "contactPartNumber": null,
+            "description": "HV split motion - return direct to PDB; remains grounded when positive-only motion plug is removed.",
+            "label": "MOTION-",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh70df5ydq47rbenyx5rnhat8d8h59ms",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "COMPUTE-SWITCH",
+        "parentName": null,
+        "partNumber": "RTX-R33-COMPUTE-POSITIVE-SW-TBD",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Compute-only positive switch input from F1 fuse. Must be rated above UBEC 6S input inrush/continuous and vehicle vibration.",
+            "label": "IN +",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "Compute-only positive switch output to UBEC. Pixhawk still remains powered by PM08 while compute OFF.",
+            "label": "OUT +",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 4,
+        "description": null,
+        "extraParts": [],
+        "id": "jh770ma11z3e88hfqrm66f752s8h5me5",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "COMPUTE-FUSED-DIST",
+        "parentName": null,
+        "partNumber": "RTX-R32-CBUS",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Compute power distributor regulated? NO: RAW 6S + after F1 and compute switch; feeds Holybro UBEC. Must select physical insulated junction.",
+            "label": "IN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "6S common negative return, one branch to UBEC input. Junction and ampacity selection HOLD.",
+            "label": "IN-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": null,
+            "description": "6S positive branch to Holybro UBEC VIN+, 16AWG provisional.",
+            "label": "JET+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": null,
+            "description": "6S negative branch to Holybro UBEC VIN-, 16AWG provisional.",
+            "label": "JET-",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 4,
+        "description": null,
+        "extraParts": [],
+        "id": "jh77bpxz590k2hnhw9yqj0wv9n8h5apj",
+        "manufacturer": "Holybro",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "ORIN-UBEC",
+        "parentName": null,
+        "partNumber": "15026",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Holybro 15026 UBEC power INPUT + 6S through F1-compute fuse and compute switch; external 3–14S BEC. Factory input connectors/lead termination per purchased 15026.",
+            "label": "VIN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "UBEC input - common 6S battery ground from upstream distribution.",
+            "label": "VIN-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": null,
+            "description": "UBEC selectable regulated VOUT + to Jetson XT30; prefer manufacturer's 7.2V recommendation or validated 9.2V value. Current depends Jetson/peripherals.",
+            "label": "VOUT+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": null,
+            "description": "UBEC regulated VOUT - common power return to Jetson XT30.",
+            "label": "VOUT-",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh723q2j35c9sqbh2w81f3agw18h5tp1",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "ORIN-INPUT-XT30",
+        "parentName": null,
+        "partNumber": "RTX-R32-JET-XT30-2",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Holybro Pixhawk Jetson carrier integrated XT30 DC input + from external Holybro 15026 UBEC output. Board nominal 7–21/24V depending revision; use regulated 7.2/9.2V setting and never feed raw 6S at 25.2V. Plug is solder/XT30 contact not discrete crimp.",
+            "label": "V+ (7-24V)",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "Holybro carrier integrated XT30 - from UBEC regulated return. Verify mating male polarity and 6S power isolation test.",
+            "label": "V- (GND)",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 6,
+        "description": null,
+        "extraParts": [],
+        "id": "jh7an4qhja21vjckse9bft5qd98h47p6",
+        "manufacturer": "Molex",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "PIXHAWK-POWER1",
+        "parentName": null,
+        "partNumber": "502439-0600",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": "502438-0000",
+            "description": "Power1 6pin Molex CLIK Mate pin1 5.3V BEC2 independent from PM08 PWR2 port pin1, 22AWG RED and 502438-0000 crimp.",
+            "label": "1",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": "502438-0000",
+            "description": "Power1 6pin Molex CLIK Mate pin2 second 5.3V BEC2 supply, 22AWG. No CAN on FC power pin3/4 I2C.",
+            "label": "2",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 5,
+            "contactPartNumber": "502438-0000",
+            "description": "Power1 pin5 GND return from PM08 second independent BEC2 6pin port pin5.",
+            "label": "5",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 6,
+            "contactPartNumber": "502438-0000",
+            "description": "Power1 pin6 second GND return from PM08 second independent BEC2 6pin port pin6.",
+            "label": "6",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh77b74vhfgqep4a70014400rx8h5nrb",
+        "manufacturer": "Amass",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "MOTION-AS300-150A-POSITIVE",
+        "parentName": null,
+        "partNumber": "AS300-PAIR-DC-POS",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Selected AMASS AS300 removable motion-only arming plug positive input from PM08 HV distribution, current rating 150A with 6AWG qualified leads; do not disconnect under load. Pixhawk/Jetson unaffected.",
+            "label": "6S IN +",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "AS300 motion arm positive output to PDB high current screw terminal; continuous negative remains connected. Full ESC and RoboClaw VM leakage/backfeed test with motion OFF.",
+            "label": "6S OUT +",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 9,
+        "description": null,
+        "extraParts": [],
+        "id": "jh77zj6jsdnecfr8h6far42q3s8h467x",
+        "manufacturer": "Holybro",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "PM08-CAN-TINNED-8AWG",
+        "parentName": null,
+        "partNumber": "15029",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Holybro SKU15028 PM08 high current INPUT + directly after MAIN master cutoff; physical XT90/tinned/ring variation must be verified before specifying contact.",
+            "label": "HVIN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "PM08 high current INPUT negative from 6S pack; must share ground with PDB/Jetson.",
+            "label": "HVIN-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": null,
+            "description": "PM08 monitored OUT + to compute/motion split; 200A max continuous per manufacturer.",
+            "label": "HVOUT+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": null,
+            "description": "PM08 monitored OUT - to split common return; actual output termination differs by vendor option.",
+            "label": "HVOUT-",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 16,
+        "description": null,
+        "extraParts": [],
+        "id": "jh710macfk9vpv5t14s8nmryr58h56f8",
+        "manufacturer": "Holybro",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "PDB-MOTION",
+        "parentName": null,
+        "partNumber": "18139",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 PDB side-entry 300A high-current input positive from motion arming switch; SCREW TERMINAL; correctly sized rated ring lug and manufacturer torque TBD.",
+            "label": "IN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 PDB high-current input negative, continuously connected common ground, not through arming switch.",
+            "label": "IN-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 side-entry PDB FR ESC XT90 positive outlet; use mating solder XT90 harness, factory ESC bare 16AWG red lead.",
+            "label": "FR+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 FR ESC XT90 negative return.",
+            "label": "FR-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 5,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 FL ESC XT90 positive outlet; matching XT90 harness.",
+            "label": "FL+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 6,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 FL ESC XT90 negative return.",
+            "label": "FL-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 7,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 RR ESC side-entry XT90 positive outlet, matching XT90 male adapter to OEM bare 16AWG ESC RED lead.",
+            "label": "RR+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 8,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 RR ESC XT90 negative return.",
+            "label": "RR-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 9,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 RL ESC side-entry XT90 positive outlet.",
+            "label": "RL+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 10,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 RL ESC XT90 negative return.",
+            "label": "RL-",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 13,
+            "contactPartNumber": null,
+            "description": "Holybro 18139 PDB XT30 auxiliary positive outlet to F2 gripper fuse. Mating XT30 male adapter required, 18AWG provisional.",
+            "label": "GRIP+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 14,
+            "contactPartNumber": null,
+            "description": "PDB XT30 auxiliary negative return for gripper; second XT30 plus fifth XT90 remain spare.",
+            "label": "GRIP-",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 6,
+        "description": null,
+        "extraParts": [],
+        "id": "jh73yjkv7xpbswe0je3xzrtrvh8h4wdh",
+        "manufacturer": "Molex",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "PIXHAWK-POWER2",
+        "parentName": null,
+        "partNumber": "502439-0600",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": "502438-0000",
+            "description": "+5.3V PM08 source pin1 (one of two POWER2 VDD pins)",
+            "label": "1",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": "502438-0000",
+            "description": "+5.3V PM08 source pin2 (second POWER2 VDD pin)",
+            "label": "2",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": null,
+            "description": "SCL2 I2C 3.3V - NOT USED: never connect PM08 CAN-H here",
+            "label": "3",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": null,
+            "description": "SDA2 I2C 3.3V - NOT USED: never connect PM08 CAN-L here",
+            "label": "4",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 5,
+            "contactPartNumber": "502438-0000",
+            "description": "Power return from PM08 POWER1 pin5",
+            "label": "5",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 6,
+            "contactPartNumber": "502438-0000",
+            "description": "Power return from PM08 POWER1 pin6",
+            "label": "6",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 4,
+        "description": null,
+        "extraParts": [],
+        "id": "jh772hcwstj31wjbyqef7b9d4d8h4drp",
+        "manufacturer": "JST",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "PIXHAWK-CAN1",
+        "parentName": null,
+        "partNumber": "GHR-04V-S",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Pixhawk +5V OUTPUT - DO NOT connect to PM08 5.3V regulator",
+            "label": "1",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": "SSHL-002T-P0.2",
+            "description": "CAN-H from PM08 connector pin3",
+            "label": "2",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": "SSHL-002T-P0.2",
+            "description": "CAN-L from PM08 connector pin4",
+            "label": "3",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": null,
+            "description": "GND reference to PM08 is through dedicated PM08 POWER1-to-Pix POWER2 GND wires; ground potential test required",
+            "label": "4",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 4,
+        "description": null,
+        "extraParts": [],
+        "id": "jh79a7g0v38ma1cp3r2ntzarh98h4r1z",
+        "manufacturer": "Pololu",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "GRIPPER-12V-REG",
+        "parentName": null,
+        "partNumber": "5677",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Pololu item 5677 D42V110F12 VIN+ from PDB through F2 fuse; 6S input, solder large pad or 5mm terminal block footprint, NO crimp contact on regulator.",
+            "label": "VIN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "Pololu #5677 GND common power ground (input and output), solder pad or 5mm terminal block; no separate physical GND connection implied.",
+            "label": "VIN-",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh75yt2s17ks8zqhyg4tp67ab18h4pj3",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "ESC-FR-PWR",
+        "parentName": null,
+        "partNumber": "RTX-R32-ESC-PWR2",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "XRotor 40A 30901001 OEM 16AWG bare RED 150mm input lead, via matched PDB XT90 positive branch. Verify soldered adaptor and 40A-rated connection.",
+            "label": "6S VIN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "XRotor 40A factory BLACK 16AWG 150mm input return to PDB XT90 common negative.",
+            "label": "6S GND",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh74qh07r3mex6f861znqsen998h504t",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "ESC-FL-PWR",
+        "parentName": null,
+        "partNumber": "RTX-R32-ESC-PWR2",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "XRotor 40A OEM RED 16AWG battery input lead, matched PDB XT90 branch FL; current branch / connector thermals to validate.",
+            "label": "6S VIN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "XRotor 40A OEM BLACK 16AWG input return to PDB XT90 negative.",
+            "label": "6S GND",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh7b698rm7j1vbdc5r8v8dwmt98h5g6q",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "ESC-RR-PWR",
+        "parentName": null,
+        "partNumber": "RTX-R32-ESC-PWR2",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "XRotor 40A OEM RED 16AWG battery input lead to PDB XT90 branch RR.",
+            "label": "6S VIN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "XRotor 40A OEM BLACK 16AWG battery negative lead to PDB XT90 return.",
+            "label": "6S GND",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh7b71e107j6qyq5tbh7z09g298h4rsd",
+        "manufacturer": "RTX Integration Draft",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "ESC-RL-PWR",
+        "parentName": null,
+        "partNumber": "RTX-R32-ESC-PWR2",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "XRotor 40A OEM RED 16AWG battery input lead to PDB XT90 branch RL.",
+            "label": "6S VIN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "XRotor 40A OEM BLACK 16AWG battery negative lead to PDB XT90 return.",
+            "label": "6S GND",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 6,
+        "description": null,
+        "extraParts": [],
+        "id": "jh748zwprx8dps4vwyv65vpq398h4vcw",
+        "manufacturer": "Molex",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "PM08-PWR1-6P (physical)",
+        "parentName": "PM08-CAN-TINNED-8AWG",
+        "partNumber": "502439-0600",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": "502438-0000",
+            "description": "5.3V / 3A max PM08 POWER1 output pin1; 22AWG to Pix PWR2/1",
+            "label": "1",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": "502438-0000",
+            "description": "5.3V / 3A max PM08 POWER1 output pin2; 22AWG to Pix PWR2/2",
+            "label": "2",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 3,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 POWER1 CAN-H to Pix CAN1/2; twist CANH/CANL",
+            "label": "3",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 4,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 POWER1 CAN-L to Pix CAN1/3; twist CANH/CANL",
+            "label": "4",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 5,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 POWER1 GND return to Pix POWER2/5",
+            "label": "5",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 6,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 POWER1 GND return to Pix POWER2/6",
+            "label": "6",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 6,
+        "description": null,
+        "extraParts": [],
+        "id": "jh758c3gp5aqavcma7q7vqqpcn8h5aj5",
+        "manufacturer": "Molex",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "PM08-PWR2-6P (independent BEC)",
+        "parentName": "PM08-CAN-TINNED-8AWG",
+        "partNumber": "502439-0600",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 second 6pin 2.00mm CLIK-Mate port pin1 BEC2 +5.3V to Pixhawk POWER1 pin1; use 502439-0600 housing and 502438 contact.",
+            "label": "1",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 second CLIK-Mate port pin2 BEC2 +5.3V to Pixhawk POWER1 pin2.",
+            "label": "2",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 5,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 second CLIK-Mate port pin5 GND to Pixhawk POWER1 pin5.",
+            "label": "5",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 6,
+            "contactPartNumber": "502438-0000",
+            "description": "PM08 second CLIK-Mate port pin6 GND to Pixhawk POWER1 pin6.",
+            "label": "6",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh760trggw0avcesyye2ze11kh8h45aa",
+        "manufacturer": "Blue SEA Systems",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "F0-BLUESEA-MRBF-125A-REVIEW",
+        "parentName": null,
+        "partNumber": "5184+5191",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Blue Sea MRBF PN5184 125A DC fuse in holder PN5191 input M8 bolt 5/16 insulated ring lug on pack +. Rated 58VDC, interrupt 5kA@32VDC. ENGINEERING CURRENT VALUE REVIEW: 125A must be checked against measured motor/Jetson simultaneous load, 8AWG PM08 cable ampacity and LiPo short-circuit duty.",
+            "label": "PACK+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "Blue Sea MRBF 5184/5191 fused output M8 stud to positive-only main AS300. Ensure holder PN5191 strain relief, manufacturer torque 8.47Nm, insulated cover and near-pack mounting; actual ring terminal and wire size TBD.",
+            "label": "MAIN CUT+ ",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh7bc2v8qwk1g9hv8dmx2ek2n58h53mk",
+        "manufacturer": "Littelfuse",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "F1-ATO10A-COMPUTE",
+        "parentName": null,
+        "partNumber": "FHAC0001LXN+ATO10A",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Littelfuse FHAC0001LXN 32VDC IP67 16AWG sealed in-line ATO fuse holder with 10A ATO fuse. Input from PM08 monitored branch positive. Rated over 6S 25.2V max. Verify UBEC 15026 6S input peak and 16AWG termination.",
+            "label": "6S FUSED IN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "Same 10A sealed ATO fuse output to compute-only AS300 switch. Holder 16AWG pigtail; appropriate 16AWG solder/crimp mating harness, strain relief, no open joints.",
+            "label": "6S FUSED OUT+",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "connector",
+        "cavities": 2,
+        "description": null,
+        "extraParts": [],
+        "id": "jh79k47z9hg0ww6m83dq3rt0rh8h5qk4",
+        "manufacturer": "Littelfuse",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "F2-ATO10A-GRIPPER",
+        "parentName": null,
+        "partNumber": "FHAC0001LXN+ATO10A",
+        "pins": [
+          {
+            "cavity": 1,
+            "contactPartNumber": null,
+            "description": "Littelfuse FHAC0001LXN 32VDC IP67 inline 16AWG 10A ATO branch fuse from PDB XT30 positive, preceding Pololu #5677 12V regulator. Test 6S input inrush and 5A brushed motor stall; fuse/holder rated to 6S.",
+            "label": "6S FUSED IN+",
+            "swsPartNumber": null
+          },
+          {
+            "cavity": 2,
+            "contactPartNumber": null,
+            "description": "10A ATO fuse output 16AWG pigtail to 18AWG gripper buck harness with separately qualified sealed 16-to-18AWG splice and thermal check.",
+            "label": "6S FUSED OUT+",
+            "swsPartNumber": null
+          }
+        ]
+      },
+      {
+        "category": "boot",
+        "cavities": null,
+        "description": null,
+        "extraParts": [],
+        "id": "jh7af5fcehsqtnmw6hv637j3158h5e1s",
+        "manufacturer": "TE Connectivity",
+        "mateName": null,
+        "mateSheetName": null,
+        "name": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "parentName": null,
+        "partNumber": "202K111-25-0",
+        "pins": []
+      }
+    ],
+    "counts": {
+      "cables": 25,
+      "labels": 11,
+      "shieldedCables": 0,
+      "wires": 38
+    },
+    "id": "k57c1e7kgzesvvyxjb8f640zms8h5b3q",
+    "name": "W-101 R3.5 | 6S main/compute/motion distribution and fuses",
+    "projectId": "k97evfv1h1rcx74b5thsmt6s398h42sx"
+  },
+  "wires": [
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "COMPUTE-SWITCH"
+      },
+      "group": null,
+      "id": "k175ttg0x92ncf2s3k8h3s3yyn8h4zs9",
+      "networkName": "W101 COMPUTE SWITCH OUT +",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "COMPUTE-FUSED-DIST"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 3,
+        "component": "COMPUTE-FUSED-DIST"
+      },
+      "group": null,
+      "id": "k172swf49fvm17kppy8kkcxsnn8h4ypd",
+      "networkName": "W101 UBEC VIN +",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "ORIN-UBEC"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 4,
+        "component": "COMPUTE-FUSED-DIST"
+      },
+      "group": null,
+      "id": "k17f1nafvsf5xm95xjfd3zn4cn8h4kyv",
+      "networkName": "W101 UBEC VIN -",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "ORIN-UBEC"
+      },
+      "wirePartNumber": "RTX-R32-W-16B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 3,
+        "component": "ORIN-UBEC"
+      },
+      "group": null,
+      "id": "k17d3wag4daatk6eadryx0572d8h518n",
+      "networkName": "W101 JETSON REGULATED 7V2 (HOLYBRO SETTING)",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "ORIN-INPUT-XT30"
+      },
+      "wirePartNumber": "RTX-R32-W-18R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 4,
+        "component": "ORIN-UBEC"
+      },
+      "group": null,
+      "id": "k1773bdkak8z0hf8pqn7wb46rx8h5wgm",
+      "networkName": "W101 JETSON RETURN",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "ORIN-INPUT-XT30"
+      },
+      "wirePartNumber": "RTX-R32-W-18B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 5,
+        "component": "HV-JUNCTION"
+      },
+      "group": null,
+      "id": "k170411k0s8fx423htvbc5fkh18h4cs6",
+      "networkName": "W101 MOTION ARM FEED+",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "MOTION-AS300-150A-POSITIVE"
+      },
+      "wirePartNumber": "RTX-R32-W-8R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 13,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k176zkxvkwgkmms34m661cs1n58h5g1d",
+      "networkName": "W101 PDB TO GRIP BUCK 6S+",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "F2-ATO10A-GRIPPER"
+      },
+      "wirePartNumber": "RTX-R32-W-18R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 14,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k17crym7veqfcgv2k8shtfjean8h418k",
+      "networkName": "W101 PDB TO GRIP BUCK 6S-",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "GRIPPER-12V-REG"
+      },
+      "wirePartNumber": "RTX-R32-W-18B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 3,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k17efd09y9a545a5vxjknhcjy18h590k",
+      "networkName": "W101 FR 6S+",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "ESC-FR-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 4,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k17e5jvr7f4hhq76x92yaw5esh8h4jh5",
+      "networkName": "W101 FR GND",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "ESC-FR-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 5,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k177ywpsjxc12w2ss9z47knhe98h4p49",
+      "networkName": "W101 FL 6S+",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "ESC-FL-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 6,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k178ccxj1az3yrq6xqqp14j9y98h435s",
+      "networkName": "W101 FL GND",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "ESC-FL-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 7,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k17e7wf5zqkn1mj7az068xxak58h512d",
+      "networkName": "W101 RR 6S+",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "ESC-RR-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 8,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k17bykfp5ka2jhb0pareeczwt98h4rx9",
+      "networkName": "W101 RR GND",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "ESC-RR-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 9,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k1766nmzndr9m5b7vyhv1hp0qh8h4hgv",
+      "networkName": "W101 RL 6S+",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "ESC-RL-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 10,
+        "component": "PDB-MOTION"
+      },
+      "group": null,
+      "id": "k178mg0f3d89250agrw87gp9618h4e48",
+      "networkName": "W101 RL GND",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "ESC-RL-PWR"
+      },
+      "wirePartNumber": "RTX-R32-W-16B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 1,
+        "component": "PM08-PWR1-6P (physical)"
+      },
+      "group": null,
+      "id": "k17dt0ezmp8k6bzx6fpss36qns8h4t4s",
+      "networkName": "PM08 PWR1/1 +5.3V -> PX PWR2/1",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "PIXHAWK-POWER2"
+      },
+      "wirePartNumber": "RTX-R32-W-22R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "PM08-PWR1-6P (physical)"
+      },
+      "group": null,
+      "id": "k1713jngywzzywqjsqf07cqag18h4dxg",
+      "networkName": "PM08 PWR1/2 +5.3V -> PX PWR2/2",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "PIXHAWK-POWER2"
+      },
+      "wirePartNumber": "RTX-R32-W-22R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 5,
+        "component": "PM08-PWR1-6P (physical)"
+      },
+      "group": null,
+      "id": "k17e2k15t4698w88nn2mr6yyr98h4znf",
+      "networkName": "PM08 PWR1/5 GND -> PX PWR2/5",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 5,
+        "component": "PIXHAWK-POWER2"
+      },
+      "wirePartNumber": "RTX-R32-W-22B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 6,
+        "component": "PM08-PWR1-6P (physical)"
+      },
+      "group": null,
+      "id": "k17966a622vy3fayqygybk34zh8h4vr9",
+      "networkName": "PM08 PWR1/6 GND -> PX PWR2/6",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 6,
+        "component": "PIXHAWK-POWER2"
+      },
+      "wirePartNumber": "RTX-R32-W-22B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 3,
+        "component": "PM08-PWR1-6P (physical)"
+      },
+      "group": {
+        "color": "#1675A9",
+        "id": "tp-k179tjr1n3zfvwdg6bqbj3hyys8h54a6-k17cqrm7n5n0mzq3mjj716anrn8h4sn0"
+      },
+      "id": "k179tjr1n3zfvwdg6bqbj3hyys8h54a6",
+      "networkName": "PM08 PWR1/3 CANH -> PX CAN1/2",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "PIXHAWK-CAN1"
+      },
+      "wirePartNumber": "RTX-R32-W-26BL"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 4,
+        "component": "PM08-PWR1-6P (physical)"
+      },
+      "group": {
+        "color": "#1675A9",
+        "id": "tp-k179tjr1n3zfvwdg6bqbj3hyys8h54a6-k17cqrm7n5n0mzq3mjj716anrn8h4sn0"
+      },
+      "id": "k17cqrm7n5n0mzq3mjj716anrn8h4sn0",
+      "networkName": "PM08 PWR1/4 CANL -> PX CAN1/3",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 3,
+        "component": "PIXHAWK-CAN1"
+      },
+      "wirePartNumber": "RTX-R32-W-26WH"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 4,
+        "component": "HV-JUNCTION"
+      },
+      "group": null,
+      "id": "k17df3r7rxhggs3cjs5rhmbs4d8h53pz",
+      "networkName": "COMPUTE NEGATIVE RETURN - UNSWITCHED",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "COMPUTE-FUSED-DIST"
+      },
+      "wirePartNumber": "RTX-R32-W-16B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "MAIN-AS300-150A-POSITIVE"
+      },
+      "group": null,
+      "id": "k173famy0rsj4aez7tkbnmedk58h400z",
+      "networkName": "6S MAIN SWITCH POSITIVE -> PM08 HV IN",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "PM08-CAN-TINNED-8AWG"
+      },
+      "wirePartNumber": "RTX-R32-W-8R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "BAT-6S"
+      },
+      "group": null,
+      "id": "k177sm8f7254t9f4a5786g1bxx8h4efd",
+      "networkName": "6S BATTERY NEGATIVE -> PM08 HV IN",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "PM08-CAN-TINNED-8AWG"
+      },
+      "wirePartNumber": "RTX-R32-W-8B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 3,
+        "component": "PM08-CAN-TINNED-8AWG"
+      },
+      "group": null,
+      "id": "k174n2f444sdknxgaar0m3r1yd8h5gk3",
+      "networkName": "6S PM08 MONITORED OUT -> SPLIT +",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "HV-JUNCTION"
+      },
+      "wirePartNumber": "RTX-R32-W-8R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 4,
+        "component": "PM08-CAN-TINNED-8AWG"
+      },
+      "group": null,
+      "id": "k17anmxy7ys7qe3fkph2d4yqe58h4nx6",
+      "networkName": "6S PM08 MONITORED RETURN -> SPLIT -",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "HV-JUNCTION"
+      },
+      "wirePartNumber": "RTX-R32-W-8B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "MOTION-AS300-150A-POSITIVE"
+      },
+      "group": null,
+      "id": "k171y3an09r2ndw8r3z756hy818h5vas",
+      "networkName": "MOTION DISCONNECT OUT -> PDB +",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "PDB-MOTION"
+      },
+      "wirePartNumber": "RTX-R32-W-8R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 6,
+        "component": "HV-JUNCTION"
+      },
+      "group": null,
+      "id": "k172hzt2vqf3a3bbfbvja3htn18h5831",
+      "networkName": "UNSWITCHED MOTION RETURN -> PDB -",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "PDB-MOTION"
+      },
+      "wirePartNumber": "RTX-R32-W-8B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 1,
+        "component": "PM08-PWR2-6P (independent BEC)"
+      },
+      "group": null,
+      "id": "k172w5phqbe1je9j43t6q1wv6s8h4kyt",
+      "networkName": "PM08 PWR2 5V3 INDEP BEC -> PIX POWER1 PIN1",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "PIXHAWK-POWER1"
+      },
+      "wirePartNumber": "RTX-R32-W-22R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "PM08-PWR2-6P (independent BEC)"
+      },
+      "group": null,
+      "id": "k171yyv3z7wa29mzs4spnpvkqh8h43em",
+      "networkName": "PM08 PWR2 5V3 INDEP BEC -> PIX POWER1 PIN2",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 2,
+        "component": "PIXHAWK-POWER1"
+      },
+      "wirePartNumber": "RTX-R32-W-22R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 5,
+        "component": "PM08-PWR2-6P (independent BEC)"
+      },
+      "group": null,
+      "id": "k17b94v5hf6x0e4kds2b8cezkn8h5yxq",
+      "networkName": "PM08 PWR2 GND -> PIX POWER1 PIN5",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 5,
+        "component": "PIXHAWK-POWER1"
+      },
+      "wirePartNumber": "RTX-R32-W-22B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 6,
+        "component": "PM08-PWR2-6P (independent BEC)"
+      },
+      "group": null,
+      "id": "k178gzhc0yv1sghr3nkeda6a498h4jvb",
+      "networkName": "PM08 PWR2 GND -> PIX POWER1 PIN6",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 6,
+        "component": "PIXHAWK-POWER1"
+      },
+      "wirePartNumber": "RTX-R32-W-22B"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 1,
+        "component": "BAT-6S"
+      },
+      "group": null,
+      "id": "k17e2nt2myw14ex947pte3y6z98h571n",
+      "networkName": "PACK+ -> F0 DC FUSE IN",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "F0-BLUESEA-MRBF-125A-REVIEW"
+      },
+      "wirePartNumber": "RTX-R32-W-8R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "F0-BLUESEA-MRBF-125A-REVIEW"
+      },
+      "group": null,
+      "id": "k174k3kf89yapcxc5h6zn9r3v18h5k21",
+      "networkName": "F0 OUT -> MASTER POSITIVE SWITCH",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "MAIN-AS300-150A-POSITIVE"
+      },
+      "wirePartNumber": "RTX-R32-W-8R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 3,
+        "component": "HV-JUNCTION"
+      },
+      "group": null,
+      "id": "k171sedvhe6kch2hfn3g89mz358h4rjq",
+      "networkName": "MONITORED 6S COMPUTE -> F1 IN",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "F1-ATO10A-COMPUTE"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "F1-ATO10A-COMPUTE"
+      },
+      "group": null,
+      "id": "k172cxgjqfyqmcrjd9spbssv418h5wnk",
+      "networkName": "F1 FUSED -> COMPUTE POSITIVE SWITCH",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "COMPUTE-SWITCH"
+      },
+      "wirePartNumber": "RTX-R32-W-16R"
+    },
+    {
+      "colorCodePartNumbers": [],
+      "from": {
+        "cavity": 2,
+        "component": "F2-ATO10A-GRIPPER"
+      },
+      "group": null,
+      "id": "k172y2v7tyz990k9cbvszfn0t18h497e",
+      "networkName": "F2 FUSED 6S POSITIVE -> 12V GRIPPER REG",
+      "shieldedCableId": null,
+      "to": {
+        "cavity": 1,
+        "component": "GRIPPER-12V-REG"
+      },
+      "wirePartNumber": "RTX-R32-W-18R"
+    }
+  ],
+  "cables": [
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "COMPUTE-SWITCH",
+      "id": "jn73ye3m4trmwrvp5zw3vy5e6n8h4vk1",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "COMPUTE-FUSED-DIST"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "COMPUTE-FUSED-DIST",
+      "id": "jn79gzmnpdr9jaefawzpt4hcm58h51rv",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "ORIN-UBEC"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "ORIN-UBEC",
+      "id": "jn71wf1xdabhs97y04b8wj57458h4mbk",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn7e7p5b8895av2v5jq91r021s8h4zkp",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-COMPUTE",
+          "position": 0.5,
+          "text": "REGULATED 7.2V TO JETSON XT30; VERIFY POLARITY & RAIL UNDER LOAD"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "ORIN-INPUT-XT30"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "HV-JUNCTION",
+      "id": "jn70r9y4zn7wz7hhgzx43w4yg58h5y5k",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn763p0vn2h92k7h3v1kdeghj18h4b09",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-MOTION",
+          "position": 0.5,
+          "text": "ARMED MOTION ONLY / 6S RAW"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "MOTION-AS300-150A-POSITIVE"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "PDB-MOTION",
+      "id": "jn7fvrgh1zx4dqrapttvccnz3d8h56rk",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn746dpf46phrh38sk10q3vg1h8h5m44",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-MOTION",
+          "position": 0.5,
+          "text": "GRIPPER 6S REGULATOR FEED"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "GRIPPER-12V-REG"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/8-0",
+      "from": "PM08-PWR1-6P (physical)",
+      "id": "jn75qnsj1k7v02y51tvpfbrqrn8h5f4d",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn7e8b1j63r8hwtf5whc3gnmvx8h5rbc",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-COMPUTE",
+          "position": 0.5,
+          "text": "INDEPENDENT BEC1 5V3 / PIX PWR2"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PIXHAWK-POWER2"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/8-0",
+      "from": "PM08-PWR1-6P (physical)",
+      "id": "jn71q5vt451js9t8z3szzg29bn8h4gde",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn7aa4tz3xq142ne3jeyvd71ah8h4jtb",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-CAN",
+          "position": 0.5,
+          "text": "DRONECAN / TWISTED H-L / PIN1+5V NOT CONNECTED"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PIXHAWK-CAN1"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "HV-JUNCTION",
+      "id": "jn7eg0kxz69b5g6wj2pjkph42s8h403m",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "COMPUTE-FUSED-DIST"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "HV-JUNCTION",
+      "id": "jn70epryzp7qr4vddn8y6v697x8h4rs7",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn7eyt6b2vejp51rw2t0961x1d8h4mhj",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-POWER",
+          "position": 0.5,
+          "text": "PM08 UPSTREAM; FC ALIVE WHEN MOTION UNPLUGGED"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PM08-CAN-TINNED-8AWG"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "MAIN-AS300-150A-POSITIVE",
+      "id": "jn7dq5dzhevtc5nwh7ydsegv8h8h5ad4",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PM08-CAN-TINNED-8AWG"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "BAT-6S",
+      "id": "jn70we80qjdhkpxa4d8fspa1x18h5ws7",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PM08-CAN-TINNED-8AWG"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "MOTION-AS300-150A-POSITIVE",
+      "id": "jn79rv8fhsdvyy2ma9kaczvk698h4n5z",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn7cffxr338x9kcppf1pgdm3k98h5qaa",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-MOTION",
+          "position": 0.5,
+          "text": "PHYSICAL MOTION HV ARM; RETURN COMMON"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PDB-MOTION"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "HV-JUNCTION",
+      "id": "jn774ft8dw6zdsjdb73kq0nf258h50dk",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PDB-MOTION"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/8-0",
+      "from": "PM08-PWR2-6P (independent BEC)",
+      "id": "jn77kzk3pdyc4hc96pgy4vvndd8h5smk",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn7869jsjkkgj0337rm8wh8y6h8h5ghk",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-COMPUTE",
+          "position": 0.5,
+          "text": "INDEPENDENT BEC2 5V3 / PIX PWR1"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "PIXHAWK-POWER1"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "BAT-6S",
+      "id": "jn716dr4d9zr68e3w31a83qscx8h564y",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "F0-BLUESEA-MRBF-125A-REVIEW"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "F0-BLUESEA-MRBF-125A-REVIEW",
+      "id": "jn74ae3yazz2wzakyb38hqajkx8h58mj",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn7ebtm2xgfm6nstqhre5n4k158h5z4p",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-HOLD",
+          "position": 0.5,
+          "text": "F0 CURRENT/RATED INTERRUPT TBD; INSTALL AT PACK+"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "MAIN-AS300-150A-POSITIVE"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "HV-JUNCTION",
+      "id": "jn7eh68x0v9taa84xsrgb3de2d8h4ge7",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "F1-ATO10A-COMPUTE"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "F1-ATO10A-COMPUTE",
+      "id": "jn7bvemzdgsxkza28c7b9zzdsx8h5mzs",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn73mh6pwenhb1wr11jqp6a4xs8h55w8",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-HOLD",
+          "position": 0.5,
+          "text": "F1 10A PROVISIONAL; TEST UBEC INPUT SURGE"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "COMPUTE-SWITCH"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "PDB-MOTION",
+      "id": "jn76g379zggat4hqn8brdqsw5s8h4hcp",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "F2-ATO10A-GRIPPER"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "F2-ATO10A-GRIPPER",
+      "id": "jn71g2mn0vk86qc5q3xje3fb918h4t7a",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "GRIPPER-12V-REG"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/2-0",
+      "from": "PDB-MOTION",
+      "id": "jn7c765ejd6dsm5jvh96xgxh2s8h5cjw",
+      "labels": [
+        {
+          "extraParts": [],
+          "graphic": null,
+          "id": "kn74yh2c1752h5rkkb3wkytdms8h5tht",
+          "lengthCm": 0,
+          "lengthInch": 0,
+          "partNumber": "RTX-R32-LABEL-MOTION",
+          "position": 0.5,
+          "text": "4 INDEPENDENT MOTOR SUPPLY PAIRS - LOOM ONLY, FIT TBD"
+        }
+      ],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "B-ESC-POWER-4WAY (FIT HOLD)"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+      "id": "jn76prvdt62s6s3m6sbgfxm9bx8h5d1z",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "ESC-FR-PWR"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+      "id": "jn77rq7sjz755b360njmnf8sjs8h4063",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "ESC-FL-PWR"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+      "id": "jn71sjcqbezqa9s4d0rv0txszx8h421r",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "ESC-RR-PWR"
+    },
+    {
+      "coveringPartNumber": "DR-25-1/4-0",
+      "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+      "id": "jn736rnvtf9kywjp4dwd9g57498h4ev8",
+      "labels": [],
+      "layers": null,
+      "lengthCm": null,
+      "lengthInch": null,
+      "to": "ESC-RL-PWR"
+    }
+  ],
+  "designLayout": {
+    "edges": [
+      {
+        "from": "COMPUTE-SWITCH",
+        "id": "jn73ye3m4trmwrvp5zw3vy5e6n8h4vk1",
+        "to": "COMPUTE-FUSED-DIST",
+        "waypoints": [
+          {
+            "x": 2100,
+            "y": -60
+          }
+        ]
+      },
+      {
+        "from": "COMPUTE-FUSED-DIST",
+        "id": "jn79gzmnpdr9jaefawzpt4hcm58h51rv",
+        "to": "ORIN-UBEC",
+        "waypoints": [
+          {
+            "x": 2390,
+            "y": -60
+          }
+        ]
+      },
+      {
+        "from": "ORIN-UBEC",
+        "id": "jn71wf1xdabhs97y04b8wj57458h4mbk",
+        "to": "ORIN-INPUT-XT30",
+        "waypoints": [
+          {
+            "x": 2690,
+            "y": -60
+          }
+        ]
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "jn70r9y4zn7wz7hhgzx43w4yg58h5y5k",
+        "to": "MOTION-AS300-150A-POSITIVE",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "jn7fvrgh1zx4dqrapttvccnz3d8h56rk",
+        "to": "GRIPPER-12V-REG",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "jn75qnsj1k7v02y51tvpfbrqrn8h5f4d",
+        "to": "PIXHAWK-POWER2",
+        "waypoints": [
+          {
+            "x": 1290,
+            "y": 540
+          }
+        ]
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "jn71q5vt451js9t8z3szzg29bn8h4gde",
+        "to": "PIXHAWK-CAN1",
+        "waypoints": []
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "jn7eg0kxz69b5g6wj2pjkph42s8h403m",
+        "to": "COMPUTE-FUSED-DIST",
+        "waypoints": []
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "jn70epryzp7qr4vddn8y6v697x8h4rs7",
+        "to": "PM08-CAN-TINNED-8AWG",
+        "waypoints": [
+          {
+            "x": 1150,
+            "y": 1050
+          }
+        ]
+      },
+      {
+        "from": "MAIN-AS300-150A-POSITIVE",
+        "id": "jn7dq5dzhevtc5nwh7ydsegv8h8h5ad4",
+        "to": "PM08-CAN-TINNED-8AWG",
+        "waypoints": [
+          {
+            "x": 790,
+            "y": 1050
+          }
+        ]
+      },
+      {
+        "from": "BAT-6S",
+        "id": "jn70we80qjdhkpxa4d8fspa1x18h5ws7",
+        "to": "PM08-CAN-TINNED-8AWG",
+        "waypoints": []
+      },
+      {
+        "from": "MOTION-AS300-150A-POSITIVE",
+        "id": "jn79rv8fhsdvyy2ma9kaczvk698h4n5z",
+        "to": "PDB-MOTION",
+        "waypoints": [
+          {
+            "x": 1850,
+            "y": 1480
+          }
+        ]
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "jn774ft8dw6zdsjdb73kq0nf258h50dk",
+        "to": "PDB-MOTION",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR2-6P (independent BEC)",
+        "id": "jn77kzk3pdyc4hc96pgy4vvndd8h5smk",
+        "to": "PIXHAWK-POWER1",
+        "waypoints": [
+          {
+            "x": 1290,
+            "y": 260
+          }
+        ]
+      },
+      {
+        "from": "BAT-6S",
+        "id": "jn716dr4d9zr68e3w31a83qscx8h564y",
+        "to": "F0-BLUESEA-MRBF-125A-REVIEW",
+        "waypoints": [
+          {
+            "x": 150,
+            "y": 1050
+          }
+        ]
+      },
+      {
+        "from": "F0-BLUESEA-MRBF-125A-REVIEW",
+        "id": "jn74ae3yazz2wzakyb38hqajkx8h58mj",
+        "to": "MAIN-AS300-150A-POSITIVE",
+        "waypoints": [
+          {
+            "x": 450,
+            "y": 1050
+          }
+        ]
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "jn7eh68x0v9taa84xsrgb3de2d8h4ge7",
+        "to": "F1-ATO10A-COMPUTE",
+        "waypoints": []
+      },
+      {
+        "from": "F1-ATO10A-COMPUTE",
+        "id": "jn7bvemzdgsxkza28c7b9zzdsx8h5mzs",
+        "to": "COMPUTE-SWITCH",
+        "waypoints": [
+          {
+            "x": 1780,
+            "y": -60
+          }
+        ]
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "jn76g379zggat4hqn8brdqsw5s8h4hcp",
+        "to": "F2-ATO10A-GRIPPER",
+        "waypoints": []
+      },
+      {
+        "from": "F2-ATO10A-GRIPPER",
+        "id": "jn71g2mn0vk86qc5q3xje3fb918h4t7a",
+        "to": "GRIPPER-12V-REG",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "jn7c765ejd6dsm5jvh96xgxh2s8h5cjw",
+        "to": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "waypoints": [
+          {
+            "x": 2160,
+            "y": 1500
+          }
+        ]
+      },
+      {
+        "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "id": "jn76prvdt62s6s3m6sbgfxm9bx8h5d1z",
+        "to": "ESC-FR-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "id": "jn77rq7sjz755b360njmnf8sjs8h4063",
+        "to": "ESC-FL-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "id": "jn71sjcqbezqa9s4d0rv0txszx8h421r",
+        "to": "ESC-RR-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "id": "jn736rnvtf9kywjp4dwd9g57498h4ev8",
+        "to": "ESC-RL-PWR",
+        "waypoints": []
+      }
+    ],
+    "nodes": [
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "BAT-6S",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 0,
+        "y": 1050
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "MAIN-AS300-150A-POSITIVE",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 600,
+        "y": 1050
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "HV-JUNCTION",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1320,
+        "y": 1050
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "COMPUTE-SWITCH",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1940,
+        "y": -60
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "COMPUTE-FUSED-DIST",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2240,
+        "y": -60
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ORIN-UBEC",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2540,
+        "y": -60
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ORIN-INPUT-XT30",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2860,
+        "y": -60
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PIXHAWK-POWER1",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1510,
+        "y": 260
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "MOTION-AS300-150A-POSITIVE",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1670,
+        "y": 1480
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PM08-CAN-TINNED-8AWG",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 980,
+        "y": 1050
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PDB-MOTION",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2030,
+        "y": 1480
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PIXHAWK-POWER2",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1510,
+        "y": 540
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PIXHAWK-CAN1",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1510,
+        "y": 790
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "GRIPPER-12V-REG",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2780,
+        "y": 2510
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-FR-PWR",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2670,
+        "y": 1520
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-FL-PWR",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2670,
+        "y": 1770
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-RR-PWR",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2670,
+        "y": 2020
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-RL-PWR",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2670,
+        "y": 2270
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PM08-PWR1-6P (physical)",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1070,
+        "y": 540
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PM08-PWR2-6P (independent BEC)",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1070,
+        "y": 260
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "F0-BLUESEA-MRBF-125A-REVIEW",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 300,
+        "y": 1050
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "F1-ATO10A-COMPUTE",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 1630,
+        "y": -60
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "F2-ATO10A-GRIPPER",
+        "rotationDegrees": 0,
+        "scale": 0.2,
+        "x": 2410,
+        "y": 2510
+      },
+      {
+        "flipHorizontal": true,
+        "flipVertical": false,
+        "name": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "rotationDegrees": -90,
+        "scale": 0.07,
+        "x": 2310,
+        "y": 1590
+      }
+    ],
+    "view": "design"
+  },
+  "wiringLayout": {
+    "edges": [
+      {
+        "from": "COMPUTE-SWITCH",
+        "id": "k175ttg0x92ncf2s3k8h3s3yyn8h4zs9",
+        "to": "COMPUTE-FUSED-DIST",
+        "waypoints": []
+      },
+      {
+        "from": "COMPUTE-FUSED-DIST",
+        "id": "k172swf49fvm17kppy8kkcxsnn8h4ypd",
+        "to": "ORIN-UBEC",
+        "waypoints": []
+      },
+      {
+        "from": "COMPUTE-FUSED-DIST",
+        "id": "k17f1nafvsf5xm95xjfd3zn4cn8h4kyv",
+        "to": "ORIN-UBEC",
+        "waypoints": []
+      },
+      {
+        "from": "ORIN-UBEC",
+        "id": "k17d3wag4daatk6eadryx0572d8h518n",
+        "to": "ORIN-INPUT-XT30",
+        "waypoints": []
+      },
+      {
+        "from": "ORIN-UBEC",
+        "id": "k1773bdkak8z0hf8pqn7wb46rx8h5wgm",
+        "to": "ORIN-INPUT-XT30",
+        "waypoints": []
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "k170411k0s8fx423htvbc5fkh18h4cs6",
+        "to": "MOTION-AS300-150A-POSITIVE",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k176zkxvkwgkmms34m661cs1n58h5g1d",
+        "to": "F2-ATO10A-GRIPPER",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k17crym7veqfcgv2k8shtfjean8h418k",
+        "to": "GRIPPER-12V-REG",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k17efd09y9a545a5vxjknhcjy18h590k",
+        "to": "ESC-FR-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k17e5jvr7f4hhq76x92yaw5esh8h4jh5",
+        "to": "ESC-FR-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k177ywpsjxc12w2ss9z47knhe98h4p49",
+        "to": "ESC-FL-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k178ccxj1az3yrq6xqqp14j9y98h435s",
+        "to": "ESC-FL-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k17e7wf5zqkn1mj7az068xxak58h512d",
+        "to": "ESC-RR-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k17bykfp5ka2jhb0pareeczwt98h4rx9",
+        "to": "ESC-RR-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k1766nmzndr9m5b7vyhv1hp0qh8h4hgv",
+        "to": "ESC-RL-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PDB-MOTION",
+        "id": "k178mg0f3d89250agrw87gp9618h4e48",
+        "to": "ESC-RL-PWR",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "k17dt0ezmp8k6bzx6fpss36qns8h4t4s",
+        "to": "PIXHAWK-POWER2",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "k1713jngywzzywqjsqf07cqag18h4dxg",
+        "to": "PIXHAWK-POWER2",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "k17e2k15t4698w88nn2mr6yyr98h4znf",
+        "to": "PIXHAWK-POWER2",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "k17966a622vy3fayqygybk34zh8h4vr9",
+        "to": "PIXHAWK-POWER2",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "k179tjr1n3zfvwdg6bqbj3hyys8h54a6",
+        "to": "PIXHAWK-CAN1",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR1-6P (physical)",
+        "id": "k17cqrm7n5n0mzq3mjj716anrn8h4sn0",
+        "to": "PIXHAWK-CAN1",
+        "waypoints": []
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "k17df3r7rxhggs3cjs5rhmbs4d8h53pz",
+        "to": "COMPUTE-FUSED-DIST",
+        "waypoints": []
+      },
+      {
+        "from": "MAIN-AS300-150A-POSITIVE",
+        "id": "k173famy0rsj4aez7tkbnmedk58h400z",
+        "to": "PM08-CAN-TINNED-8AWG",
+        "waypoints": []
+      },
+      {
+        "from": "BAT-6S",
+        "id": "k177sm8f7254t9f4a5786g1bxx8h4efd",
+        "to": "PM08-CAN-TINNED-8AWG",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-CAN-TINNED-8AWG",
+        "id": "k174n2f444sdknxgaar0m3r1yd8h5gk3",
+        "to": "HV-JUNCTION",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-CAN-TINNED-8AWG",
+        "id": "k17anmxy7ys7qe3fkph2d4yqe58h4nx6",
+        "to": "HV-JUNCTION",
+        "waypoints": []
+      },
+      {
+        "from": "MOTION-AS300-150A-POSITIVE",
+        "id": "k171y3an09r2ndw8r3z756hy818h5vas",
+        "to": "PDB-MOTION",
+        "waypoints": []
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "k172hzt2vqf3a3bbfbvja3htn18h5831",
+        "to": "PDB-MOTION",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR2-6P (independent BEC)",
+        "id": "k172w5phqbe1je9j43t6q1wv6s8h4kyt",
+        "to": "PIXHAWK-POWER1",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR2-6P (independent BEC)",
+        "id": "k171yyv3z7wa29mzs4spnpvkqh8h43em",
+        "to": "PIXHAWK-POWER1",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR2-6P (independent BEC)",
+        "id": "k17b94v5hf6x0e4kds2b8cezkn8h5yxq",
+        "to": "PIXHAWK-POWER1",
+        "waypoints": []
+      },
+      {
+        "from": "PM08-PWR2-6P (independent BEC)",
+        "id": "k178gzhc0yv1sghr3nkeda6a498h4jvb",
+        "to": "PIXHAWK-POWER1",
+        "waypoints": []
+      },
+      {
+        "from": "BAT-6S",
+        "id": "k17e2nt2myw14ex947pte3y6z98h571n",
+        "to": "F0-BLUESEA-MRBF-125A-REVIEW",
+        "waypoints": []
+      },
+      {
+        "from": "F0-BLUESEA-MRBF-125A-REVIEW",
+        "id": "k174k3kf89yapcxc5h6zn9r3v18h5k21",
+        "to": "MAIN-AS300-150A-POSITIVE",
+        "waypoints": []
+      },
+      {
+        "from": "HV-JUNCTION",
+        "id": "k171sedvhe6kch2hfn3g89mz358h4rjq",
+        "to": "F1-ATO10A-COMPUTE",
+        "waypoints": []
+      },
+      {
+        "from": "F1-ATO10A-COMPUTE",
+        "id": "k172cxgjqfyqmcrjd9spbssv418h5wnk",
+        "to": "COMPUTE-SWITCH",
+        "waypoints": []
+      },
+      {
+        "from": "F2-ATO10A-GRIPPER",
+        "id": "k172y2v7tyz990k9cbvszfn0t18h497e",
+        "to": "GRIPPER-12V-REG",
+        "waypoints": []
+      }
+    ],
+    "nodes": [
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "BAT-6S",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 0,
+        "y": 950
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "MAIN-AS300-150A-POSITIVE",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 540,
+        "y": 950
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "HV-JUNCTION",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1100,
+        "y": 950
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "COMPUTE-SWITCH",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1630,
+        "y": -330
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "COMPUTE-FUSED-DIST",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1900,
+        "y": -330
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ORIN-UBEC",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 2170,
+        "y": -330
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ORIN-INPUT-XT30",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 2450,
+        "y": -330
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PIXHAWK-POWER1",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1480,
+        "y": 100
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "MOTION-AS300-150A-POSITIVE",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1370,
+        "y": 1370
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PM08-CAN-TINNED-8AWG",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 810,
+        "y": 950
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PDB-MOTION",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1660,
+        "y": 1370
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PIXHAWK-POWER2",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1480,
+        "y": 370
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PIXHAWK-CAN1",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1480,
+        "y": 640
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "GRIPPER-12V-REG",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 2290,
+        "y": 2420
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-FR-PWR",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 2290,
+        "y": 1390
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-FL-PWR",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 2290,
+        "y": 1650
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-RR-PWR",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 2290,
+        "y": 1910
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "ESC-RL-PWR",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 2290,
+        "y": 2170
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PM08-PWR1-6P (physical)",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1160,
+        "y": 370
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "PM08-PWR2-6P (independent BEC)",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1160,
+        "y": 100
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "F0-BLUESEA-MRBF-125A-REVIEW",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 270,
+        "y": 950
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "F1-ATO10A-COMPUTE",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1360,
+        "y": -330
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "F2-ATO10A-GRIPPER",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1910,
+        "y": 2420
+      },
+      {
+        "flipHorizontal": false,
+        "flipVertical": false,
+        "name": "B-ESC-POWER-4WAY (FIT HOLD)",
+        "rotationDegrees": 0,
+        "scale": 1,
+        "x": 1930,
+        "y": 1490
+      }
+    ],
+    "view": "wiring"
+  },
+  "drcSummary": {
+    "errors": 43,
+    "byRule": [
+      {
+        "count": 25,
+        "rule": "cable-no-length",
+        "severity": "error"
+      },
+      {
+        "count": 18,
+        "rule": "cavity-no-contact",
+        "severity": "error"
+      },
+      {
+        "count": 7,
+        "rule": "cavity-unused",
+        "severity": "warning"
+      },
+      {
+        "count": 11,
+        "rule": "label-no-length",
+        "severity": "warning"
+      },
+      {
+        "count": 38,
+        "rule": "wire-no-route",
+        "severity": "warning"
+      }
+    ]
+  }
+}
