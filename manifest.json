@@ -695,9 +695,19 @@
     "sha256": "462a454290fe1d1ae2544048779de41b52d736c4b206467ced4de3cd98c62255"
   },
   {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_Compute_Radio_Mount.SLDASM",
+    "bytes": 123778,
+    "sha256": "b195847f0d3c3495b3d94c769112018e85a84f068aefcc3b423ed8f319075f4c"
+  },
+  {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_Internal_Power_Carrier.SLDASM",
     "bytes": 3982756,
     "sha256": "39fe939cdc48f37fb2ec5b57f732b9b39547ca457da2f67b42ba7be4a90cd520"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-CMP-004_Radio_Service_Clear.SLDPRT",
+    "bytes": 182013,
+    "sha256": "4b4866982ff1ffe0c21fe565f4d94b7b9bef8ea9e1e2b4ecb3b2c985ea45cabb"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-PWR-013_Integrated_Carrier_Candidate02.SLDPRT",
@@ -706,8 +716,23 @@
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM",
-    "bytes": 132052400,
-    "sha256": "1d950e844755882bce5d9d08a0fff6494443046bc6fe08e8f7bca96b3186e159"
+    "bytes": 132152824,
+    "sha256": "b0c6b95ac95ac87e7dd8a783d56dbc08a6948d95410c52c7bce288940296c18f"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C178_Compute_Radio_Module.png",
+    "bytes": 277964,
+    "sha256": "3a3ebc18ae81ba5714767d2a411e471b83f1adbef989db96b69c670742796040"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C180_Radio_Integrated_isometric.png",
+    "bytes": 46027,
+    "sha256": "0f039820ba943f64f02d4c59c8863a7d8fb32b99e7cd454166d8234b9506b26f"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C180_Radio_Integrated_top.png",
+    "bytes": 43480,
+    "sha256": "64393e154e479e9f2873d7e4afdfe68a75c3fb5cc2f16c86239a53977646b09c"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_1/Holybro_15026_UBEC_CATALOG_ENVELOPE.SLDPRT",
@@ -758,6 +783,21 @@
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_2/VitalParts_HFF-M3-35-S5p5-ALU_DIMENSIONAL_APPROX.SLDPRT",
     "bytes": 54109,
     "sha256": "d16e7551cee33737b2e661c2194b7844e304bc78f854449ecdc2a8420dfd57d5"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/Holybro_SiK_V3_100mW_BODY_CATALOG.SLDPRT",
+    "bytes": 69406,
+    "sha256": "cd009c6e3ce759b3a04ceb12de9d8aa375f8642887f77b0558de1697e0b61931"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/Radio_Protective_Pad_1mm_APPROX.SLDPRT",
+    "bytes": 67467,
+    "sha256": "b8b1296111e3f988d9ba8ecfcd57c458276eee816801b8af58e07d96756b278a"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/T18L_Radio_Tie_Route_H3_APPROX.SLDPRT",
+    "bytes": 121382,
+    "sha256": "b19e83df23e6c94f7e2e70f56416f35130c1e466055696c1bc26f7513b5ac9a1"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/#14100 CAN PM08 CNC______v001.step.SLDPRT",

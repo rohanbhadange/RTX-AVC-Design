@@ -1,21 +1,21 @@
-# C168 — integrated internal power carrier
+# C180 — SiK radio integration
 
-Current saved assembly: [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM), configuration **R3_3_PACKAGING**. C167 installed the integrated internal power carrier; C168 reopened the saved main and exported the native views below. The earlier `R3_2_POWER_CASSETTE_WIP` configuration is preserved.
+Current saved assembly: [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM), configuration **R3_3_RADIO_INTEGRATION**. C179 installed the compute/radio module in the existing main; C180 saved, reopened and exported the native views below. The prior packaging configuration is preserved.
 
-The integrated support replaces the previous floor and four separate hangers while preserving electronics and PCB-hardware poses. Mounting pieces decrease from 80 to 72. The support change gives approximately **19 g of provisional density-equivalent mass reduction**; this is not a measured aircraft-weight saving. The installed carrier part retains its development filename ending in `Integrated_Carrier_Candidate02.SLDPRT`.
+One onboard Holybro SiK V3 100 mW catalog body is retained on an integral extension of the shared compute cradle, with protective-pad and tie-route approximations. It uses no separate bracket or mounting screws. The radio representation uses the catalog **23.5 g including the antenna once**; antenna geometry remains unmodeled. Added support, pads and ties contribute approximately **2.90 g at provisional assumed densities**. The incomplete native aircraft representation is about 3.232 kg; this is not a reconciled physical aircraft mass or flight CG result.
 
-Scoped native checks covered a 120-body scene, 12 hardware checks and allocated upper driver-access paths. On reopen, the main had 83 roots / 62 active roots; the changed module had 24 roots / 22 active roots. The three new root mates reported zero errors. Save and reopen reported error/warning codes 0/0. These checks cover the changed support/module and current main root identities, references, configurations and poses; they are not an exhaustive nested-import or all-state release audit.
+Scoped native checks reported clear body/support and end-service allocations. C180 reopened with 84 roots / 62 active roots, six module components, and zero errors on five module mates and three root mates. This evidence covers the saved installation and the checked allocations. Actual connector, antenna, cable, protective-pad and tie behavior remain approximated or unmodeled.
 
-The inherited frame-reference warning and CAM lightweight-restoration warning remain engineering holds. Actual wiring, electrical interfaces, remaining electronics/sensor/radio integration, printing/material behavior and dynamic/load qualification remain unfinished. Native represented mass and CG remain incomplete physical-aircraft estimates. This prototype is not a manufacturing or flight release. Cross-machine reference resolution and cold portable checkout have not been verified.
+Actual USB host allocation, storage/boot behavior, RF performance, retention, printing, vibration and electrical integration remain open. Inherited frame/CAM warnings and remaining system-integration holds persist. This is an engineering prototype checkpoint, not a manufacturing or flight release. Locally authored CAD references are preserved; cross-machine reference resolution and cold portable checkout remain unverified.
 
-The [six-file checkpoint manifest](checkpoints/C168/manifest.json) gives relative paths, sizes and SHA256 hashes. The [current asset manifest](manifest.json) also retains the unchanged baseline dependencies without duplicating them. CAD bytes and embedded reference paths are preserved and stored through Git LFS; use `git lfs pull` after cloning. The [C124 baseline](https://github.com/rohanbhadange/RTX-AVC-Design/tree/33064c5ab7eba07455f86873217466ac426707c5), its historical notes and its views remain available.
+The [nine-file checkpoint manifest](checkpoints/C180/manifest.json) records relative paths, sizes and SHA256 hashes. The [current asset manifest](manifest.json) retains unchanged baseline dependencies without duplicating CAD. Use Git LFS and `git lfs pull` to retrieve native files. The previous [C168 power-carrier checkpoint](https://github.com/rohanbhadange/RTX-AVC-Design/tree/6bf4cbe56adefc6e6fe75dc1f9d2995498c3d246) and [C124 baseline](https://github.com/rohanbhadange/RTX-AVC-Design/tree/33064c5ab7eba07455f86873217466ac426707c5) remain available in history.
 
 ## Native checkpoint views
 
-![C168 saved integrated-power main assembly, isometric](images/C168_Integrated_Power_isometric.png)
+![C180 saved radio-integrated main assembly, isometric](cad/DronePlayground/WORKING/R3_1/exports/C180_Radio_Integrated_isometric.png)
 
-![C168 saved integrated-power main assembly, top](images/C168_Integrated_Power_top.png)
+![C180 saved radio-integrated main assembly, top](cad/DronePlayground/WORKING/R3_1/exports/C180_Radio_Integrated_top.png)
 
-The C164 detail view below shows the integrated carrier geometry subsequently installed in C167; the filename records the earlier part-development checkpoint.
+The C178 detail below shows the saved compute/radio module subsequently installed in the main, including the catalog body and retention approximations.
 
-![C164 native detail of integrated power-carrier geometry](images/C164_Integrated_Power_Carrier_Candidate.png)
+![C178 native compute/radio module detail](cad/DronePlayground/WORKING/R3_1/exports/C178_Compute_Radio_Module.png)
