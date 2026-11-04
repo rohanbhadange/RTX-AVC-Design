@@ -1,0 +1,42 @@
+[
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_2/Packaging/R3_2_PM08_Cassette_Fastener_Kit.SLDASM",
+    "bytes": 87347,
+    "sha256": "ba2ca620476738f758877b7ab5b78cf401fcd8648df90df929e6fd0fa8cfb6ca"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_Internal_Power_PM08.SLDASM",
+    "bytes": 4394486,
+    "sha256": "976b0cb6b1392170071e36bf2c916d655dd64de14370a6f64c70b84dcfe00aa8"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM",
+    "bytes": 132178669,
+    "sha256": "ff6915213ecdf254c4d07d6ef0e797807ad33c36aa53f2d3742fff07fa354430"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/Delock_64343_BrainChip_COMBINED_SPACE_ALLOCATION_APPROX.SLDPRT",
+    "bytes": 55309,
+    "sha256": "6c1df0ad9340221a930603ceb3fa8769b88ddf0ab833c50f6d30afdf5d694d40"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/Transcend_TS512GMTE400S_2242_CATALOG_INTERFACE_RESERVATION.SLDPRT",
+    "bytes": 87857,
+    "sha256": "49c5667495ecd3c26e22a2b13bb942480b57bfd7acbe018ceeeb277d150d4501"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C203_Internal_PM08_Module.png",
+    "bytes": 470302,
+    "sha256": "e859896f71fbdc8f5c4aceb21284102358c7f4f3f02dc1780109ac57d4941736"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_isometric.png",
+    "bytes": 45960,
+    "sha256": "ea9ffda66e9d3aea9d88aa8f037285c0bf9166b0a22979838249e6ddc0b8cadb"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_top.png",
+    "bytes": 43290,
+    "sha256": "95fd8ec33e8bf89b0f2f25537e7621cd89c58309dac3186497630bfac0037b5f"
+  }
+]

@@ -1,21 +1,19 @@
-# C180 — SiK radio integration
+# C215 — internal PM08 packaging WIP
 
-Current saved assembly: [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM), configuration **R3_3_RADIO_INTEGRATION**. C179 installed the compute/radio module in the existing main; C180 saved, reopened and exported the native views below. The prior packaging configuration is preserved.
+Current saved assembly: [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM), configuration **R3_3_CENTRAL_POWER_WIP**. The same native assembly now locates the manufacturer PM08 case on existing internal mounts, with its existing ten-piece mounting kit. The older external case/carrier and obsolete USB-storage fallback are suppressed only in this configuration. The C180 radio-integration configuration remains available.
 
-One onboard Holybro SiK V3 100 mW catalog body is retained on an integral extension of the shared compute cradle, with protective-pad and tie-route approximations. It uses no separate bracket or mounting screws. The radio representation uses the catalog **23.5 g including the antenna once**; antenna geometry remains unmodeled. Added support, pads and ties contribute approximately **2.90 g at provisional assumed densities**. The incomplete native aircraft representation is about 3.232 kg; this is not a reconciled physical aircraft mass or flight CG result.
+C215 reopened the saved assembly and checked 87 roots / 62 active roots, saved reference paths/configurations/poses, the PM08 module's 26 roots / 24 active roots, and zero errors on five new root mates and two module mates. A massless sketch contains 28 proposed lead-route segments. Scoped earlier case/hardware/lead-allocation checks covered the retained surrounding geometry; actual cable dimensions, terminations and service behavior remain to be qualified.
 
-Scoped native checks reported clear body/support and end-service allocations. C180 reopened with 84 roots / 62 active roots, six module components, and zero errors on five module mates and three root mates. This evidence covers the saved installation and the checked allocations. Actual connector, antenna, cable, protective-pad and tie behavior remain approximated or unmodeled.
+The NVMe body is a 42 × 22 × 2.23 mm catalogue/interface reference with a 5 g catalogue mass override. The combined E-key adapter/accelerator body is an approximate space allocation with a **30 g design allowance**, not verified manufacturer geometry or a proven card fit. Neither reservation demonstrates mating, retention, boot, PCIe or driver compatibility. Imported-compute model coverage and the merged socket/contact region remain unresolved.
 
-Actual USB host allocation, storage/boot behavior, RF performance, retention, printing, vibration and electrical integration remain open. Inherited frame/CAM warnings and remaining system-integration holds persist. This is an engineering prototype checkpoint, not a manufacturing or flight release. Locally authored CAD references are preserved; cross-machine reference resolution and cold portable checkout remain unverified.
+The incomplete native representation is **3.2598 kg**, not a reconciled aircraft mass or flight CG. Missing hardware/wiring, assumed materials and design allowances remain. Arm roots, guards, motor axes, gripper, landing and flow sensor are unchanged in this checkpoint. External shelf removal and simpler arm interfaces are still being reviewed.
 
-The [nine-file checkpoint manifest](checkpoints/C180/manifest.json) records relative paths, sizes and SHA256 hashes. The [current asset manifest](manifest.json) retains unchanged baseline dependencies without duplicating CAD. Use Git LFS and `git lfs pull` to retrieve native files. The previous [C168 power-carrier checkpoint](https://github.com/rohanbhadange/RTX-AVC-Design/tree/6bf4cbe56adefc6e6fe75dc1f9d2995498c3d246) and [C124 baseline](https://github.com/rohanbhadange/RTX-AVC-Design/tree/33064c5ab7eba07455f86873217466ac426707c5) remain available in history.
+This is a version-control archive of an engineering WIP, **not a manufacturing or flight release**. Native bytes and existing relative archive paths are preserved. Cross-machine reference resolution and cold portable checkout remain unverified. Use Git LFS and `git lfs pull`; file sizes and hashes are recorded in the [checkpoint manifest](checkpoints/C215/manifest.json) and [current asset manifest](manifest.json). [C180 remains in history](https://github.com/rohanbhadange/RTX-AVC-Design/tree/abdcbf29504fcbe194f0bcb1597a6e0320edf69a).
 
-## Native checkpoint views
+## Saved native views
 
-![C180 saved radio-integrated main assembly, isometric](cad/DronePlayground/WORKING/R3_1/exports/C180_Radio_Integrated_isometric.png)
+![C215 main assembly, isometric](cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_isometric.png)
 
-![C180 saved radio-integrated main assembly, top](cad/DronePlayground/WORKING/R3_1/exports/C180_Radio_Integrated_top.png)
+![C215 main assembly, top](cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_top.png)
 
-The C178 detail below shows the saved compute/radio module subsequently installed in the main, including the catalog body and retention approximations.
-
-![C178 native compute/radio module detail](cad/DronePlayground/WORKING/R3_1/exports/C178_Compute_Radio_Module.png)
+![Internal PM08 module detail](cad/DronePlayground/WORKING/R3_1/exports/C203_Internal_PM08_Module.png)

@@ -665,6 +665,11 @@
     "sha256": "808c29a13fbcce620af6f211f7ae1cb8675995dfddbb24528e17ec0e2136f8bb"
   },
   {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_2/Packaging/R3_2_PM08_Cassette_Fastener_Kit.SLDASM",
+    "bytes": 87347,
+    "sha256": "ba2ca620476738f758877b7ab5b78cf401fcd8648df90df929e6fd0fa8cfb6ca"
+  },
+  {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_2/Packaging/R3_2_Regulator_PCB_Fastener_Kit_Z63p5.SLDASM",
     "bytes": 103007,
     "sha256": "b0a6d4833306ea745ae2253ddb253875e82ab90d642facc7ca25aec9abf349f8"
@@ -705,6 +710,11 @@
     "sha256": "39fe939cdc48f37fb2ec5b57f732b9b39547ca457da2f67b42ba7be4a90cd520"
   },
   {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_Internal_Power_PM08.SLDASM",
+    "bytes": 4394486,
+    "sha256": "976b0cb6b1392170071e36bf2c916d655dd64de14370a6f64c70b84dcfe00aa8"
+  },
+  {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-CMP-004_Radio_Service_Clear.SLDPRT",
     "bytes": 182013,
     "sha256": "4b4866982ff1ffe0c21fe565f4d94b7b9bef8ea9e1e2b4ecb3b2c985ea45cabb"
@@ -716,8 +726,8 @@
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM",
-    "bytes": 132152824,
-    "sha256": "b0c6b95ac95ac87e7dd8a783d56dbc08a6948d95410c52c7bce288940296c18f"
+    "bytes": 132178669,
+    "sha256": "ff6915213ecdf254c4d07d6ef0e797807ad33c36aa53f2d3742fff07fa354430"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C178_Compute_Radio_Module.png",
@@ -733,6 +743,21 @@
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C180_Radio_Integrated_top.png",
     "bytes": 43480,
     "sha256": "64393e154e479e9f2873d7e4afdfe68a75c3fb5cc2f16c86239a53977646b09c"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C203_Internal_PM08_Module.png",
+    "bytes": 470302,
+    "sha256": "e859896f71fbdc8f5c4aceb21284102358c7f4f3f02dc1780109ac57d4941736"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_isometric.png",
+    "bytes": 45960,
+    "sha256": "ea9ffda66e9d3aea9d88aa8f037285c0bf9166b0a22979838249e6ddc0b8cadb"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_top.png",
+    "bytes": 43290,
+    "sha256": "95fd8ec33e8bf89b0f2f25537e7621cd89c58309dac3186497630bfac0037b5f"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_1/Holybro_15026_UBEC_CATALOG_ENVELOPE.SLDPRT",
@@ -785,6 +810,11 @@
     "sha256": "d16e7551cee33737b2e661c2194b7844e304bc78f854449ecdc2a8420dfd57d5"
   },
   {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/Delock_64343_BrainChip_COMBINED_SPACE_ALLOCATION_APPROX.SLDPRT",
+    "bytes": 55309,
+    "sha256": "6c1df0ad9340221a930603ceb3fa8769b88ddf0ab833c50f6d30afdf5d694d40"
+  },
+  {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/Holybro_SiK_V3_100mW_BODY_CATALOG.SLDPRT",
     "bytes": 69406,
     "sha256": "cd009c6e3ce759b3a04ceb12de9d8aa375f8642887f77b0558de1697e0b61931"
@@ -798,6 +828,11 @@
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/T18L_Radio_Tie_Route_H3_APPROX.SLDPRT",
     "bytes": 121382,
     "sha256": "b19e83df23e6c94f7e2e70f56416f35130c1e466055696c1bc26f7513b5ac9a1"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_3/Transcend_TS512GMTE400S_2242_CATALOG_INTERFACE_RESERVATION.SLDPRT",
+    "bytes": 87857,
+    "sha256": "49c5667495ecd3c26e22a2b13bb942480b57bfd7acbe018ceeeb277d150d4501"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/#14100 CAN PM08 CNC______v001.step.SLDPRT",
