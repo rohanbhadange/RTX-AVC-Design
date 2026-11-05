@@ -289,4 +289,21 @@
         <DENS displayname="Mass Density" value="1140" usepropertycurve="0" />
       </physicalproperties>
     </material>
-    </classification></mstns:materials>
+    <material xmlns:ns0="http://www.solidworks.com/sldcolorswatch" name="G10 proxy - 1850 kg-m3 - density only" description="Provisional G10/FR4 CAD mass proxy only; exact supplied stock and mechanical, thermal and dielectric properties unqualified." envdata="1">
+      <shaders>
+        <pwshader2 name="carbon steel" isNewShader="1" path="\metal\steel\carbon steel.p2m" />
+        <cgshader2 name="SteelPlainCarbon" />
+        <pwshader name="polished steel" />
+        <cgshader name="SteelPlainCarbon" />
+        <swtexture path="images\textures\metal\cast\cast_fine.jpg" />
+      </shaders>
+      <swatchcolor RGB="c8c18c">
+        <ns0:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="0.790000" Specularity="0.880000" Shininess="0.210000" Emission="0.210000" />
+      </swatchcolor>
+      <xhatch name="ANSI31 (General)" angle="0.0" scale="1.0" />
+      <physicalproperties>
+        <DENS displayname="Mass Density" value="1850" usepropertycurve="0" />
+      </physicalproperties>
+    </material>
+    
+</classification></mstns:materials>

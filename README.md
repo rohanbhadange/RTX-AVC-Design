@@ -10,7 +10,7 @@ Engineering design, electrical integration, and revision history for the RTX Aut
 - [Current W-100 snapshot](snapshots/wiring-studio/W-100_current.json) and [W-101 snapshot](snapshots/wiring-studio/W-101_current.json). New snapshot commits automatically regenerate SVG/CSV through GitHub Actions.
 
 
-Current saved CAD checkpoint: **[C215 — internal PM08 packaging WIP](CURRENT_CAD.md)**, configuration `R3_3_CENTRAL_POWER_WIP`. Earlier C180 and C168 checkpoints remain in repository history.
+Current saved CAD checkpoint: **[C235 — camera mount and shelf retirement WIP](CURRENT_CAD.md)**, configuration `R3_3_SHELF_REMOVAL_WIP`. [C215](https://github.com/rohanbhadange/RTX-AVC-Design/tree/d2333e64767bef0c173a161def651d16077cb0c1) and earlier checkpoints remain in repository history.
 
 ## Source of truth
 - **Native CAD:** working SolidWorks assembly, with exported/reviewed releases committed when available. Do not infer CAD geometry from wiring diagrams.

@@ -1,19 +1,23 @@
-# C215 — internal PM08 packaging WIP
+# C235 — camera mount and shelf retirement WIP
 
-Current saved assembly: [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM), configuration **R3_3_CENTRAL_POWER_WIP**. The same native assembly now locates the manufacturer PM08 case on existing internal mounts, with its existing ten-piece mounting kit. The older external case/carrier and obsolete USB-storage fallback are suppressed only in this configuration. The C180 radio-integration configuration remains available.
+Current saved assembly: [DronePlayground.SLDASM](cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM), configuration **R3_3_SHELF_REMOVAL_WIP**. The installed 16-piece D455 service mount replaces the previous camera supports while preserving the exact D455 pose. The obsolete external shelf and 14 old camera-support/hardware roots are suppressed only in this configuration. The prior C215 and C180 configurations remain preserved.
 
-C215 reopened the saved assembly and checked 87 roots / 62 active roots, saved reference paths/configurations/poses, the PM08 module's 26 roots / 24 active roots, and zero errors on five new root mates and two module mates. A massless sketch contains 28 proposed lead-route segments. Scoped earlier case/hardware/lead-allocation checks covered the retained surrounding geometry; actual cable dimensions, terminations and service behavior remain to be qualified.
+The new mount uses a service yoke, thin G10 interface pieces and native mounting hardware. A dedicated lower carbon-fiber plate hole configuration preserves the legacy plate configurations. The four checked camera-mount mates report zero errors; the C215/C180 root mates remain preserved. C235 reopened with 88 roots / 48 active roots and error/warning codes 0/0. This records scoped persistence and geometry checks, rather than all-state physical qualification.
 
-The NVMe body is a 42 × 22 × 2.23 mm catalogue/interface reference with a 5 g catalogue mass override. The combined E-key adapter/accelerator body is an approximate space allocation with a **30 g design allowance**, not verified manufacturer geometry or a proven card fit. Neither reservation demonstrates mating, retention, boot, PCIe or driver compatibility. Imported-compute model coverage and the merged socket/contact region remain unresolved.
+The incomplete native represented mass is **3.194656 kg**, approximately **65.13 g lower than C215**. These values include assumed materials and incomplete representations; they are not reconciled aircraft mass, flight CG or demonstrated flight margin.
 
-The incomplete native representation is **3.2598 kg**, not a reconciled aircraft mass or flight CG. Missing hardware/wiring, assumed materials and design allowances remain. Arm roots, guards, motor axes, gripper, landing and flow sensor are unchanged in this checkpoint. External shelf removal and simpler arm interfaces are still being reviewed.
+Physical service access, G10 locking, underhead contact, fastener preload, vibration and all-state behavior remain open. Inherited frame/CAM and remaining whole-aircraft integration and qualification holds persist. This is an engineering WIP archive, not a manufacturing or flight release. Native reference bytes are preserved; cross-machine reference resolution and cold portable checkout remain unverified.
 
-This is a version-control archive of an engineering WIP, **not a manufacturing or flight release**. Native bytes and existing relative archive paths are preserved. Cross-machine reference resolution and cold portable checkout remain unverified. Use Git LFS and `git lfs pull`; file sizes and hashes are recorded in the [checkpoint manifest](checkpoints/C215/manifest.json) and [current asset manifest](manifest.json). [C180 remains in history](https://github.com/rohanbhadange/RTX-AVC-Design/tree/abdcbf29504fcbe194f0bcb1597a6e0320edf69a).
+The [16-file checkpoint manifest](checkpoints/C235/manifest.json) records relative paths, sizes and SHA256 hashes. The [current asset manifest](manifest.json) retains unchanged dependencies without duplicating CAD. Retrieve native files with Git LFS and `git lfs pull`. The [C215 baseline](https://github.com/rohanbhadange/RTX-AVC-Design/tree/d2333e64767bef0c173a161def651d16077cb0c1) and earlier checkpoints remain available in history.
 
 ## Saved native views
 
-![C215 main assembly, isometric](cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_isometric.png)
+![C235 main assembly, isometric](cad/DronePlayground/WORKING/R3_1/exports/C235_Shelf_Removal_WIP_isometric.png)
 
-![C215 main assembly, top](cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_top.png)
+![C235 main assembly, front](cad/DronePlayground/WORKING/R3_1/exports/C235_Shelf_Removal_WIP_front.png)
 
-![Internal PM08 module detail](cad/DronePlayground/WORKING/R3_1/exports/C203_Internal_PM08_Module.png)
+![C235 main assembly, top](cad/DronePlayground/WORKING/R3_1/exports/C235_Shelf_Removal_WIP_top.png)
+
+The C222 native detail shows the camera-mount module subsequently installed in this checkpoint.
+
+![C222 D455 service-mount detail](cad/DronePlayground/WORKING/R3_1/exports/C222_D455_Service_Mount_detail.png)

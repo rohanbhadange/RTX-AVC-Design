@@ -141,8 +141,8 @@
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CAD/CUSTOM/R01/Chassis/CF_Centre_Plate_Lower_R01.SLDPRT",
-    "bytes": 191619,
-    "sha256": "17aa5513f976e5e488af1ceb64ee0aa1a2d9296e7fa539cd3c0a93ac7c18bc69"
+    "bytes": 260741,
+    "sha256": "e508d03f554e1c8ed36e5ebd63e7f32b35eda13d07e24e0683d40015f990741d"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CAD/CUSTOM/R01/Chassis/CF_Centre_Plate_Upper_R01.SLDPRT",
@@ -396,8 +396,8 @@
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CAD/Materials/Drone_Materials.sldmat",
-    "bytes": 20257,
-    "sha256": "d13d626c1dd6e10b827b2a1e8d669b0ddb2aeb801ccf198aae5f11f7398d47cd"
+    "bytes": 21289,
+    "sha256": "f123b85e7c01753fdfb13809e40e1fea0716422d2cdd55868d22080bcf2a1785"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CAD/PLACEHOLDERS/ELP_USBGS1200P01_BH120_PH_Approx_Case_Lens_Bracket_QTY3.SLDPRT",
@@ -705,6 +705,11 @@
     "sha256": "b195847f0d3c3495b3d94c769112018e85a84f068aefcc3b423ed8f319075f4c"
   },
   {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_D455_Service_Mount.SLDASM",
+    "bytes": 173399,
+    "sha256": "100a84be8a2356f61a29e597b0ed0f281fd6e566805c11a4a1a6c1940dc04373"
+  },
+  {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_Internal_Power_Carrier.SLDASM",
     "bytes": 3982756,
     "sha256": "39fe939cdc48f37fb2ec5b57f732b9b39547ca457da2f67b42ba7be4a90cd520"
@@ -713,6 +718,21 @@
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/R3_3_Internal_Power_PM08.SLDASM",
     "bytes": 4394486,
     "sha256": "976b0cb6b1392170071e36bf2c916d655dd64de14370a6f64c70b84dcfe00aa8"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-CAM-003_C220_Service_Yoke.SLDPRT",
+    "bytes": 87131,
+    "sha256": "273062a5eb6cfa7d20190096f9f45906dfb4e9a8014dbf32eb226d370e1e55d9"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-CAM-004_C220_Lower_G10_0p254.SLDPRT",
+    "bytes": 65522,
+    "sha256": "6fcdf098be2a73e33f3653e1e093bdf48efc64a6c8f970dcca1a9306d4e3e873"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-CAM-005_C220_Upper_G10_D8_0p254.SLDPRT",
+    "bytes": 57730,
+    "sha256": "20c21a2bf51c990369cece8ad8354ce8b43508521ca82f2409d64d5c840a4e1d"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/CUSTOM/R3_3/Packaging/RTX-R3.3-DP-CMP-004_Radio_Service_Clear.SLDPRT",
@@ -726,8 +746,8 @@
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/DronePlayground.SLDASM",
-    "bytes": 132178669,
-    "sha256": "ff6915213ecdf254c4d07d6ef0e797807ad33c36aa53f2d3742fff07fa354430"
+    "bytes": 132440568,
+    "sha256": "a4520e2dbdd3433cc872263cdca1739c5063576972ec2316b0c762ce2adfd696"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C178_Compute_Radio_Module.png",
@@ -758,6 +778,26 @@
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C215_Central_Power_WIP_top.png",
     "bytes": 43290,
     "sha256": "95fd8ec33e8bf89b0f2f25537e7621cd89c58309dac3186497630bfac0037b5f"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C222_D455_Service_Mount_detail.png",
+    "bytes": 302952,
+    "sha256": "dd09faa609ed20799da6a0f5cb1225baef12268bd8a2915e09d9b0fe2492cabf"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C235_Shelf_Removal_WIP_front.png",
+    "bytes": 11514,
+    "sha256": "8f72ab9218121a1d2c5750f5dd496d7febbfe625c6b462e44451119e47351f90"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C235_Shelf_Removal_WIP_isometric.png",
+    "bytes": 18864,
+    "sha256": "7a133e37bb85bde646af02af14fd648d08036023aa0c2e8dd1569b465de22927"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/exports/C235_Shelf_Removal_WIP_top.png",
+    "bytes": 19619,
+    "sha256": "6dfbe8ba2d61673fef44737cb102755baf3430bcb44911b73ce88ccf90cad718"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/PLACEHOLDERS/R3_1/Holybro_15026_UBEC_CATALOG_ENVELOPE.SLDPRT",
@@ -4460,6 +4500,11 @@
     "sha256": "675199a246ff49cda26c5298ab0b8fc940f318b36756a8805c2dea9602ac04f3"
   },
   {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/Standard_Hardware/ISO4762_M3x10.SLDPRT",
+    "bytes": 291419,
+    "sha256": "57082577abde8b8bc2ae75f3355c6bde71455c1d71a19edbe106120fe69ee92a"
+  },
+  {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/Standard_Hardware/ISO4762_M3x12.SLDPRT",
     "bytes": 292920,
     "sha256": "39293e3723efd30e4284fa0138cbec66003a01fbe73c5499391ef30142cbc996"
@@ -4473,6 +4518,11 @@
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/Standard_Hardware/ISO4762_M4x110.SLDPRT",
     "bytes": 157668,
     "sha256": "a29a235354ed724a6ce9b20f115bfd4c62d4f2dfe0edaa72c4c9a6b0132a0d48"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/Standard_Hardware/ISO4762_M4x6.SLDPRT",
+    "bytes": 294858,
+    "sha256": "bd8ce9a51bfe7fee995f9205da11620b3b34d1793f0ca13ae8869c20086a6ce8"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/Standard_Hardware/ISO7040_M4.SLDPRT",
@@ -4498,6 +4548,11 @@
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/Standard_Hardware/ISO7089_M4.SLDPRT",
     "bytes": 67539,
     "sha256": "fca0cb36bd8dc51e5ef1da8573476d2894a1288e22228947d21e35220a0a790a"
+  },
+  {
+    "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/Standard_Hardware/ISO7093_M4.SLDPRT",
+    "bytes": 118675,
+    "sha256": "ce1953c241c632b60f20f6c59e876d43aebd001c40dd0d6b6f917053f3fbb8e9"
   },
   {
     "repoRelative": "cad/DronePlayground/WORKING/R3_1/VENDOR/SUBMODEL-24LC32_PART_SOIC8_1_27_ASM.step.SLDASM",
